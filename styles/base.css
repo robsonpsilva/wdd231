@@ -7,6 +7,13 @@
 :root{
     --specialcolor: #003399;
     --high-contrast-text-color: #FFEE93;
+    --special-button-color:#009B3A;
+    --larger-font: 2.2rem;
+    --large-font: 2rem;
+    --medium-font: 1.2rem;
+    --small-medium-font: 1rem;
+    --small-font: 0.8rem;
+    --smaller-font: 0.5rem;
 }
 
 /* Ensuring that figure labels are centered */
@@ -21,19 +28,27 @@ p{
 
 /* Defining heading 1 <h1> size to small devices */
 h1 {
-	text-align: center;
-	font-size: 1.2rem;
-	color: var(--high-contrast-text-color);
+	text-align: left;
+	font-size: var(--medium-font);
+	color: var(--specialcolor);
 }
 
 /* Defining heading 2 <h2> size to small devices */
 
 h2 {
-		font-size: 0.8rem;
-		color: navy;
-		text-align: left;
+		font-size: var(--small-medium-font);
+		color: var(--specialcolor);
+		text-align: center;
 }
 
+span {
+    color: var(--high-contrast-text-color);
+    font-size: var(--medium-font);
+}
+nav{
+    background-color: var(--specialcolor);
+    padding: 2px;
+}
 #body-section{
     background-color: whitesmoke;
 }
@@ -48,13 +63,11 @@ h2 {
 
 /* Stylin small view navigation */
 #menu {
-	font-size: 1.5rem;
-	border: 0;
+	align-self: start;
+    font-size: var(--large-font);
+	border: 0px;
 	background: none;
-	color: white;
- 	position: relative;
-	left: 5px;
-    padding-bottom: 5px;
+	color: var(--high-contrast-text-color);
 }
 
 #menu::before {
@@ -69,21 +82,22 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	color: #fff;
+	color: #b62828;
 }
 
 .comp_nav_a{
 	display: none;
     box-sizing: border-box;
-	padding: 1rem;
 	text-align: center;
+    align-items: center;
 	text-decoration: none;
 	color: wheat;
+    height: 30px;
 }
 
 .comp_nav_a:hover {
     
-    background-color: #d8d0f4;
+    background-color: var(--high-contrast-text-color);
     color: #333;
     font-weight: 700;
 }
@@ -93,32 +107,39 @@ h2 {
 	display: block;
 }
 
-
+.header-container{
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    background-color: var(--specialcolor);
+    padding: 10px;
+}
+.header-title-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
 /*Styling the header section*/
-.h-container{
+/* .h-container{
     display: flex;
-    flex-direction:column;
-    justify-content:space-between;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+    gap: 10px;
     background-color: var(--specialcolor);
-}
+    height: auto;
+    padding: 10px;
+} */
 
 /* Start of nav styling */
 
 
 /* Formating navigation component */
 
-.header-top-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    color: wheat
-}
 .active{
 	background-color: black;
-	box-shadow: 0 0 2px crimson;
+	box-shadow: 0 0 10px var(--high-contrast-text-color);
 }
 .active::before {
 	content: "📍";/* just a wayfinding symbol for the user */
@@ -136,9 +157,13 @@ h2 {
     /* In this class we divide the main sector in 3 vertical 
     sections one to the Home label, one to the central cards ant one to the botton card. */
     display: grid;
-    grid-template-rows: auto; 
+    grid-template-rows: auto auto auto auto; 
     grid-template-columns: auto; 
+    row-gap: 10px;
     padding: 10px;
+}
+.top-container{
+    justify-content:left;
 }
 .central-container{
     /* Styling the card elements in main using grid for mobile, 
@@ -151,9 +176,8 @@ h2 {
     row-gap: 10px;
 }
 
-
 .card{
-    border: 1px solid gray;
+    border: 1px solid var(--specialcolor);
     border-radius: 10px;
 }
 .card1{
@@ -174,7 +198,7 @@ h2 {
     border-top-right-radius: 10px; 
     background-color: var(--specialcolor);
     color: var(--high-contrast-text-color);
-    height: 2em;
+    height: 3em;
     width: 100%;
 }
 .list-style{
@@ -182,14 +206,32 @@ h2 {
     margin-left: 40px;  
     margin-top: 20px;    
 }
-/* Styling first part of inner content */
+
+.form-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 15px; /* Espaçamento entre os botões */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.form-container1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    border-top: 1px var(--specialcolor) solid;
+    padding: 20px;
+}
 
 
-
+/* Estilização do formulário */
+form {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os links */
+}
 /* Ending of main section styling */
 
 /* Styling the footer section */
-.f-container{
+.footer-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,12 +242,11 @@ h2 {
     height: 90px;
     padding: 20px;
 }
-.f-container p{
-    font-size: small;
+.footer-container p {
+    font-size:var(--small-font);
 }
-
-#modification{
-    color: white;
+.footer-container p span{
+    font-size:var(--small-font);
 }
 
 .img_footer{
@@ -213,28 +254,56 @@ h2 {
     height: auto;
 }
 
+.link-button {
+    display: inline-block; /* Faz o link se comportar como um bloco inline, similar a um botão */
+    padding: 10px 20px; /* Adiciona espaçamento interno (tamanho do botão) */
+    background-color: var(--specialcolor); /* Cor de fundo */
+    color: var(--high-contrast-text-color); /* Cor do texto */
+    font-size: var(--small-font); /* Tamanho da fonte */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 5px; /* Deixa as bordas arredondadas */
+    border: none; /* Remove borda padrão */
+    cursor: pointer; /* Mostra o ponteiro de clique */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+.link-button1{
+    background-color: var(--high-contrast-text-color);
+    color:var(--specialcolor);
+} 
+
+
 /* large view navigation ************************************/
 
 @media (min-width: 32em) {
 	h1 {
-		font-size: 2rem;
-		margin-left: 0;
-		text-align: center;
-	}
-	
+		grid-column: 1 / 3;
+        font-size: var(--larger-font);
+    }
 	h2 {
-		font-size: 1.5rem;
+		font-size: var(--large-medium-font);
 		text-align: left;
 	}
+    span {
+        font-size: var(--larger-font);
+    }
+
+    .main-container {
+        /* In this class we divide the main sector in 3 vertical 
+        sections one to the Home label, one to the central cards ant one to the botton card. */
+        display: grid;
+        grid-template-rows: auto auto auto auto; 
+        grid-template-columns: auto auto; 
+        column-gap: 20px;
+        row-gap: 10px;
+        padding: 0px 10px 10px 10px;
+    }
 
     /* Formating navigation component */
     .header-top-div{
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 5px;
-        justify-content: center;
-        align-items: center;
         padding: 15px;
         color: wheat
     }
@@ -261,7 +330,7 @@ h2 {
         align-items: center;
         color: wheat;
         text-decoration: none;
-        height: 100%;
+        background-color: black;
     }
     .central-container{
         /* Styling the card elements in main using grid for mobile, 
@@ -274,8 +343,17 @@ h2 {
         column-gap: 10px;
     }
 
-
-    .f-container p{
-        font-size:medium;
+    .botton-container{
+        grid-column: 1/3;
     }
+
+
+    .form-container1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        border-top: 1px var(--specialcolor) solid;
+        padding: 20px;
+    }
+
 }
