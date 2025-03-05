@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensuring that figure labels are centered */
+figcaption{
+    text-align: center;
+}
+
+/* This is a personal style choice, I chose to justify all text within <p> elements. */
+p{
+    text-align: justify;
+}
+
+/* Defining heading 1 <h1> size to small devices */
+h1 {
+	text-align: center;
+	font-size: 1.2rem;
+	
+}
+
+/* Defining heading 2 <h2> size to small devices */
+
+h2 {
+		font-size: 0.8rem;
+		color: navy;
+		text-align: left;
+}
+
+/* Defining the font to be used on the website */
+.open-sans-font {
+    font-family: "Open Sans", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+/* Stylin small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: relative;
+	left: 5px;
+    padding-bottom: 5px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.comp_nav {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #fff;
+}
+
+.comp_nav_a{
+	display: none;
+    box-sizing: border-box;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: wheat;
+}
+
+.comp_nav_a:hover {
+    
+    background-color: #d8d0f4;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+/* Styling body element */
+.b-container{
+    display: flex;
+    flex-direction:column;
+    font-size: 1rem;
+}
+
+/*Styling the header section*/
+.h-container{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background-color:rgb(66, 5, 99);
+}
+
+/* Start of nav styling */
+
+
+/* Formating navigation component */
+
+.header-top-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: wheat
+}
+.active{
+	background-color: black;
+	box-shadow: 0 0 2px crimson;
+}
+.active::before {
+	content: "📍";/* just a wayfinding symbol for the user */
+}
+
+/* End of nav styling */
+
+/* End of header styling */
+
+/* Styling the main section */
+
+/* Formating the main container and two sections inside it */
+
+.grid-container {
+    /* In this class we divide the main sector in 3 vertical 
+    sections one to the Home label, one to the central cards ant one to the botton card. */
+    display: grid;
+    grid-template-rows: auto; 
+    grid-template-columns: auto; 
+    padding: 5px;
+}
+.central-container{
+    /* Styling the card elements in main using grid for mobile, 
+    devices with small viewports. Here I'm using grid, with one column and two rows, 
+    one for each card. 
+    */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    row-gap: 10px;
+}
+
+
+.card{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+/* Styling o h2 About Me */
+.cardtop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    background-color: rgb(66, 5, 99);
+    color: wheat;
+    height: 2em;
+
+}
+.list-style{
+    list-style-type:disc;
+    margin-left: 40px;  
+    margin-top: 20px;    
+}
+/* Styling first part of inner content */
+
+
+
+#h1_p3{
+    color: yellow;
+}
+
+
+#sect2_div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+/* Ending of main section styling */
+
+/* Styling the footer section */
+.f-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(66, 5, 99);
+    color: wheat;
+    height: 90px;
+    padding: 20px;
+}
+.f-container p{
+    font-size: small;
+}
+
+#modification{
+    color: white;
+}
+
+.img_footer{
+    width: 15px;
+    height: 15px;
+}
+
+/* large view navigation ************************************/
+
+@media (min-width: 32em) {
+	h1 {
+		font-size: 2rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 1.5rem;
+		text-align: left;
+	}
+
+    /* Formating navigation component */
+    .header-top-div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        color: wheat
+    }
+
+
+/* End of nav styling */
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+    .comp_nav{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width:auto;
+        height: 40px; 
+        background-color: black;
+        
+    }
+    .comp_nav_a{
+        display: flex;
+        align-items: center;
+        color: wheat;
+        text-decoration: none;
+        height: 100%;
+    }
+    .central-container{
+        /* Styling the card elements in main using grid for mobile, 
+        devices with small viewports. Here I'm using grid, with one column and two rows, 
+        one for each card. 
+        */
+        display: grid;
+        grid-template-columns: auto 30%;
+        grid-template-rows:auto;
+        column-gap: 10px;
+    }
+
+    #sect1{
+        width: 70%;
+    }
+    #sect1_p{
+        padding-top: 10px;
+    }
+    #sect2_div{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+        padding: 20px;
+    }
+    .f-container p{
+        font-size:medium;
+    }
+}
