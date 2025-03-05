@@ -84,12 +84,7 @@ h2 {
 	display: block;
 }
 
-/* Styling body element */
-.b-container{
-    display: flex;
-    flex-direction:column;
-    font-size: 1rem;
-}
+
 
 /*Styling the header section*/
 .h-container{
@@ -128,13 +123,13 @@ h2 {
 
 /* Formating the main container and two sections inside it */
 
-.grid-container {
+.main-container {
     /* In this class we divide the main sector in 3 vertical 
     sections one to the Home label, one to the central cards ant one to the botton card. */
     display: grid;
     grid-template-rows: auto; 
     grid-template-columns: auto; 
-    padding: 5px;
+    padding: 10px;
 }
 .central-container{
     /* Styling the card elements in main using grid for mobile, 
@@ -152,6 +147,14 @@ h2 {
     border: 1px solid gray;
     border-radius: 10px;
 }
+.card1{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.cardfigure{
+    margin-top: 20px;
+}
 
 /* Styling o h2 About Me */
 .cardtop{
@@ -163,7 +166,7 @@ h2 {
     background-color: rgb(66, 5, 99);
     color: wheat;
     height: 2em;
-
+    width: 100%;
 }
 .list-style{
     list-style-type:disc;
@@ -179,13 +182,6 @@ h2 {
 }
 
 
-#sect2_div{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-
-}
 
 /* Ending of main section styling */
 
@@ -270,23 +266,12 @@ h2 {
         one for each card. 
         */
         display: grid;
-        grid-template-columns: auto 30%;
+        grid-template-columns: auto 320px;
         grid-template-rows:auto;
         column-gap: 10px;
     }
 
-    #sect1{
-        width: 70%;
-    }
-    #sect1_p{
-        padding-top: 10px;
-    }
-    #sect2_div{
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 20px;
-        padding: 20px;
-    }
+
     .f-container p{
         font-size:medium;
     }
