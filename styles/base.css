@@ -210,7 +210,7 @@ h2 {
 
 .img_footer{
     width: 15px;
-    height: 15px;
+    height: auto;
 }
 
 /* large view navigation ************************************/
