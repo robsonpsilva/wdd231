@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --specialcolor: #003399;
+    --high-contrast-text-color: #FFEE93;
+    --special-button-color:#009B3A;
+    --larger-font: 2.2rem;
+    --large-font: 2rem;
+    --medium-font: 1.2rem;
+    --small-medium-font: 1rem;
+    --small-font: 0.8rem;
+    --smaller-font: 0.5rem;
+}
+
+/* Ensuring that figure labels are centered */
+figcaption{
+    text-align: center;
+}
+
+/* This is a personal style choice, I chose to justify all text within <p> elements. */
+p{
+    text-align: justify;
+}
+
+/* Defining heading 1 <h1> size to small devices */
+h1 {
+	text-align: left;
+	font-size: var(--medium-font);
+	color: var(--specialcolor);
+}
+
+/* Defining heading 2 <h2> size to small devices */
+
+h2 {
+		font-size: var(--small-medium-font);
+		color: var(--specialcolor);
+		text-align: center;
+}
+
+span {
+    color: var(--high-contrast-text-color);
+    font-size: var(--medium-font);
+}
+nav{
+    background-color: var(--specialcolor);
+    padding: 2px;
+}
+#body-section{
+    background-color: whitesmoke;
+}
+
+/* Defining the font to be used on the website */
+.open-sans-font {
+    font-family: "Open Sans", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+/* Stylin small view navigation */
+#menu {
+	align-self: start;
+    font-size: var(--large-font);
+	border: 0px;
+	background: none;
+	color: var(--high-contrast-text-color);
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.comp_nav {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #b62828;
+}
+
+.comp_nav_a{
+	display: none;
+    box-sizing: border-box;
+	text-align: center;
+    align-items: center;
+	text-decoration: none;
+	color: wheat;
+    height: 30px;
+}
+
+.comp_nav_a:hover {
+    
+    background-color: var(--high-contrast-text-color);
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.header-container{
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    background-color: var(--specialcolor);
+    padding: 10px;
+}
+.header-title-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/*Styling the header section*/
+/* .h-container{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--specialcolor);
+    height: auto;
+    padding: 10px;
+} */
+
+/* Start of nav styling */
+
+
+/* Formating navigation component */
+
+.active{
+	background-color: black;
+	box-shadow: 0 0 10px var(--high-contrast-text-color);
+}
+.active::before {
+	content: "📍";/* just a wayfinding symbol for the user */
+}
+
+/* End of nav styling */
+
+/* End of header styling */
+
+/* Styling the main section */
+
+/* Formating the main container and two sections inside it */
+
+.main-container {
+    /* In this class we divide the main sector in 3 vertical 
+    sections one to the Home label, one to the central cards ant one to the botton card. */
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.top-container{
+    justify-content:left;
+}
+.central-container{
+    /* Styling the card elements in main using grid for mobile, 
+    devices with small viewports. Here I'm using grid, with one column and two rows, 
+    one for each card. 
+    */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    row-gap: 10px;
+}
+
+.card{
+    border: 1px solid var(--specialcolor);
+    border-radius: 10px;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.cardfigure{
+    margin-top: 20px;
+}
+
+/* Styling o h2 About Me */
+.cardtop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    background-color: var(--specialcolor);
+    color: var(--high-contrast-text-color);
+    height: 3em;
+    width: 100%;
+}
+.list-style{
+    list-style-type:disc;
+    margin-left: 40px;  
+    margin-top: 20px;    
+}
+
+
+
+
+
+/* Estilização do formulário */
+form {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os links */
+}
+/* Ending of main section styling */
+
+/* Styling the footer section */
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--specialcolor);
+    color: var(--high-contrast-text-color);
+    height: 90px;
+    padding: 20px;
+}
+.footer-container p {
+    font-size:var(--small-font);
+}
+.footer-container p span{
+    font-size:var(--small-font);
+}
+
+.img_footer{
+    width: 15px;
+    height: auto;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.form-container1{
+    border-top: 1px solid black;
+}
+
+.dynamic-button {
+    padding: 10px 15px;
+    width: 95%;
+    margin: 5px;
+    margin-left: 8px;
+    color: var(--high-contrast-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    gap: 5px;
+}
+.dynamic-button.completed-false {
+    background-color: #003399; /* Blue for "completed: false" */
+}
+.dynamic-button.completed-true {
+    background-color: #380101; /* Green for "completed: true" */
+}
+.dynamic-button:hover {
+    filter: brightness(1.2);
+}
+
+.query-button{
+    background-color: black;
+    color: var(--high-contrast-text-color);
+    margin: 10px;
+    width: 90px;
+    height: 30px;
+}
+
+
+/* large view navigation ************************************/
+
+@media (min-width: 32em) {
+	h1 {
+		grid-column: 1 / 3;
+        font-size: var(--larger-font);
+    }
+	h2 {
+		font-size: var(--large-medium-font);
+		text-align: left;
+	}
+    span {
+        font-size: var(--larger-font);
+    }
+
+    /* .main-container {
+    
+        display: grid;
+        grid-template-rows: auto auto auto auto; 
+        grid-template-columns: auto auto; 
+        column-gap: 20px;
+        row-gap: 10px;
+        padding: 0px 10px 10px 10px;
+    } */
+
+    /* Formating navigation component */
+    .header-top-div{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 15px;
+        color: wheat
+    }
+
+
+/* End of nav styling */
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+    .comp_nav{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width:auto;
+        height: 40px; 
+        background-color: black;
+        
+    }
+    .comp_nav_a{
+        display: flex;
+        align-items: center;
+        color: wheat;
+        text-decoration: none;
+        background-color: black;
+    }
+    .central-container{
+        /* Styling the card elements in main using grid for mobile, 
+        devices with small viewports. Here I'm using grid, with one column and two rows, 
+        one for each card. 
+        */
+        display: grid;
+        grid-template-columns: auto 320px;
+        grid-template-rows:auto;
+        column-gap: 10px;
+    }
+
+    .botton-container{
+        grid-column: 1/3;
+    }
+  
+   
+    .dynamic-button {
+        margin-left: 15px;
+        padding: 10px 15px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        flex: 1 1 calc(30% - 5px);
+        max-width: calc(30% - 5px);
+        text-align: center;
+    }
+    .query-button{
+        background-color: black;
+        color: var(--high-contrast-text-color);
+        margin: 10px;
+        width: 150px;
+        height: 30px;
+    }
+
+}
