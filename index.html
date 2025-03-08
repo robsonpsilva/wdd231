@@ -15,6 +15,7 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/base.js" defer></script>
 
+
 </head>
 <body id = "body-section" class = "open-sans-font">
     <header class = "header-container">
@@ -68,21 +69,16 @@
         <section class="card botton-container">
             <h2 class = "cardtop"> Web and Computer Programming Certificate</h2>
             <div class="form-container">
-                <form action="#" method="post">
-                    <button onclick="filter('ALL')">ALL</button>
-                    <button onclick="filter('CSE')">ALL</button>
-                    <button onclick="filter('WDD')">ALL</button>
-                </form>
+                <div>
+                    <button class="query-button" onclick="filter('ALL')">ALL</button>
+                    <button class="query-button" onclick="filter('CSE')">CSE</button>
+                    <button class="query-button" onclick="filter('WDD')">WDD</button>
+                </div>
             </div>
-            <div>
-                <form action="#" method="post" class="form-container1">
-                    <!-- <a href="https://www.exemplo1.com" class="link-button link-button1" target="_blank">CSE 110</a>
-                    <a href="https://www.exemplo2.com" class="link-button link-button1" target="_blank">WDD 130</a>
-                    <a href="https://www.exemplo3.com" class="link-button link-button1" target="_blank">CSE 111</a>
-                    <a href="https://www.exemplo1.com" class="link-button" target="_blank">CSE 210</a>
-                    <a href="https://www.exemplo2.com" class="link-button link-button1" target="_blank">WDD 131</a>
-                    <a href="https://www.exemplo3.com" class="link-button" target="_blank">WDD 231</a> -->
-                </form>
+            <div class="form-container form-container1">
+                <div  id="dynamic-section">
+                    <!-- Botões serão adicionados dinamicamente aqui -->
+                </div>
             </div>
         </section>
     </main>
