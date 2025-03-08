@@ -49,9 +49,7 @@ nav{
     background-color: var(--specialcolor);
     padding: 2px;
 }
-#body-section{
-    background-color: whitesmoke;
-}
+
 
 /* Defining the font to be used on the website */
 .open-sans-font {
@@ -120,17 +118,6 @@ nav{
     gap: 10px;
 }
 
-/*Styling the header section*/
-/* .h-container{
-    display: flex;
-    flex-direction:row;
-    justify-content:space-around;
-    align-items: center;
-    gap: 10px;
-    background-color: var(--specialcolor);
-    height: auto;
-    padding: 10px;
-} */
 
 /* Start of nav styling */
 
@@ -162,19 +149,7 @@ nav{
     row-gap: 10px;
     padding: 10px;
 }
-.top-container{
-    justify-content:left;
-}
-.central-container{
-    /* Styling the card elements in main using grid for mobile, 
-    devices with small viewports. Here I'm using grid, with one column and two rows, 
-    one for each card. 
-    */
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows:auto;
-    row-gap: 10px;
-}
+
 
 .card{
     border: 1px solid var(--specialcolor);
@@ -209,15 +184,6 @@ nav{
 }
 
 
-
-
-
-/* Estilização do formulário */
-form {
-    display: flex;
-    gap: 20px; /* Espaçamento entre os links */
-}
-/* Ending of main section styling */
 
 /* Styling the footer section */
 .footer-container{
