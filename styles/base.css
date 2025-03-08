@@ -268,17 +268,7 @@ nav{
         font-size: var(--larger-font);
     }
 
-   
 
-
-    /* Formating navigation component */
-    .header-top-div{
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 5px;
-        padding: 15px;
-        color: wheat
-    }
 
 
 /* End of nav styling */
