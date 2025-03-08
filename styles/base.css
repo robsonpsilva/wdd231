@@ -271,7 +271,7 @@ form {
     background-color: #003399; /* Blue for "completed: false" */
 }
 .dynamic-button.completed-true {
-    background-color: #4CAF50; /* Green for "completed: true" */
+    background-color: #380101; /* Green for "completed: true" */
 }
 .dynamic-button:hover {
     filter: brightness(1.2);
