@@ -180,7 +180,7 @@ nav{
     border: 1px solid var(--specialcolor);
     border-radius: 10px;
 }
-.card1{
+.card-city-country{
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -200,6 +200,7 @@ nav{
     color: var(--high-contrast-text-color);
     height: 3em;
     width: 100%;
+    
 }
 .list-style{
     list-style-type:disc;
@@ -301,16 +302,8 @@ form {
         font-size: var(--larger-font);
     }
 
-    .main-container {
-        /* In this class we divide the main sector in 3 vertical 
-        sections one to the Home label, one to the central cards ant one to the botton card. */
-        display: grid;
-        grid-template-rows: auto auto auto auto; 
-        grid-template-columns: auto auto; 
-        column-gap: 20px;
-        row-gap: 10px;
-        padding: 0px 10px 10px 10px;
-    }
+   
+
 
     /* Formating navigation component */
     .header-top-div{
@@ -345,26 +338,22 @@ form {
         text-decoration: none;
         background-color: black;
     }
-    .central-container{
-        /* Styling the card elements in main using grid for mobile, 
-        devices with small viewports. Here I'm using grid, with one column and two rows, 
-        one for each card. 
-        */
-        display: grid;
-        grid-template-columns: auto 320px;
-        grid-template-rows:auto;
-        column-gap: 10px;
-    }
 
-    .botton-container{
+    .main-container {
+        /* In this class we divide the main sector in 3 vertical 
+        sections one to the Home label, one to the central cards ant one to the botton card. */
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+    }
+    .botton-card{
         grid-column: 1/3;
     }
-  
    
     .dynamic-button {
         margin-left: 15px;
         padding: 10px 15px;
-        color: white;
+        color: var(--high-contrast-text-color);
         border: none;
         border-radius: 5px;
         cursor: pointer;

@@ -34,9 +34,7 @@ function filter(subject) {
 	
     const filteredCourses = subject === 'ALL' ? courses : courses.filter(course => course.subject === subject);
 
-    
 
-    // Cria e adiciona botões dinamicamente
     filteredCourses.forEach(course => {
         const button = document.createElement('button');
         button.textContent = `${course.subject} ${course.number}`;
@@ -46,10 +44,9 @@ function filter(subject) {
         button.className = `dynamic-button ${course.completed ? 'completed-true' : 'completed-false'}`;
     });
 
-	// Calcula o total de créditos usando reduce
+	
     const totalCredits = filteredCourses.reduce((acc, course) => acc + course.credits, 0);
 
-    // Exibe o total de créditos na interface
     const totalCreditsDisplay = document.createElement('p');
     totalCreditsDisplay.textContent = `Total de Créditos: ${totalCredits}`;
     totalCreditsDisplay.style.textAlign = 'center'
