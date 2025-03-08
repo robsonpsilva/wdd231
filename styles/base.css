@@ -364,7 +364,7 @@ form {
     .dynamic-button {
         margin-left: 15px;
         padding: 10px 15px;
-        color: var(--high-contrast-text-color);
+        color: white;
         border: none;
         border-radius: 5px;
         cursor: pointer;

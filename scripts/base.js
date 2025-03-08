@@ -28,25 +28,53 @@ function tWayFinder(item){
 	})
 }
 
-
-
 function filter(subject) {
-	const dynamicSection = document.getElementById('dynamic-section');
-	dynamicSection.innerHTML = ''; // Limpa os botões anteriores
+    const dynamicSection = document.getElementById('dynamic-section');
+    dynamicSection.innerHTML = '';
+	
+    const filteredCourses = subject === 'ALL' ? courses : courses.filter(course => course.subject === subject);
 
-	// Filtra os cursos de acordo com o "subject" selecionado
-	const filteredCourses = subject === 'ALL' ? courses : courses.filter(course => course.subject === subject);
+    
 
-	// Cria e adiciona botões dinamicamente
-	filteredCourses.forEach(course => {
-		const button = document.createElement('button');
-		button.textContent = `${course.subject} ${course.number}`;
-		button.className = 'dynamic-button';
-		button.onclick = () => alert(`You selected: ${course.title}`);
-		dynamicSection.appendChild(button);
-		button.className = `dynamic-button ${course.completed ? 'completed-true' : 'completed-false'}`
-	});
+    // Cria e adiciona botões dinamicamente
+    filteredCourses.forEach(course => {
+        const button = document.createElement('button');
+        button.textContent = `${course.subject} ${course.number}`;
+        button.className = 'dynamic-button';
+        button.onclick = () => alert(`You selected: ${course.title}`);
+        dynamicSection.appendChild(button);
+        button.className = `dynamic-button ${course.completed ? 'completed-true' : 'completed-false'}`;
+    });
+
+	// Calcula o total de créditos usando reduce
+    const totalCredits = filteredCourses.reduce((acc, course) => acc + course.credits, 0);
+
+    // Exibe o total de créditos na interface
+    const totalCreditsDisplay = document.createElement('p');
+    totalCreditsDisplay.textContent = `Total de Créditos: ${totalCredits}`;
+    totalCreditsDisplay.style.fontWeight = 'bold'; // Para destacar o texto
+    dynamicSection.appendChild(totalCreditsDisplay);
 }
+
+
+// function filter(subject) {
+// 	const dynamicSection = document.getElementById('dynamic-section');
+// 	dynamicSection.innerHTML = ''; // Limpa os botões anteriores
+
+// 	// Filtra os cursos de acordo com o "subject" selecionado
+// 	const filteredCourses = subject === 'ALL' ? courses : courses.filter(course => course.subject === subject);
+// 	const totalCredits = filteredCourses.reduce((acc, course) => acc + course.credits, 0);
+
+// 	// Cria e adiciona botões dinamicamente
+// 	filteredCourses.forEach(course => {
+// 		const button = document.createElement('button');
+// 		button.textContent = `${course.subject} ${course.number}`;
+// 		button.className = 'dynamic-button';
+// 		button.onclick = () => alert(`You: ${course.title}`);
+// 		dynamicSection.appendChild(button);
+// 		button.className = `dynamic-button ${course.completed ? 'completed-true' : 'completed-false'}`
+// 	});
+// }
 
 
 const courses = [
