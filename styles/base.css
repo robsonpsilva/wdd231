@@ -252,6 +252,10 @@ nav{
     height: 30px;
 }
 
+#header-image{
+    height: 10vw;
+    width: 10vw;
+}
 
 /* large view navigation ************************************/
 
