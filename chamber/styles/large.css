@@ -1,4 +1,4 @@
-@media (min-width: 32em) {
+@media (min-width: 320px) {
     #menu {
 		display: none; /* hide hamburger button */
 	}

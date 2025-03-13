@@ -1,0 +1,73 @@
+[
+    {
+      "companyName": "Petrobras",
+      "address": "Avenida República do Chile, 65 - Rio de Janeiro, RJ",
+      "phone": "+55 21 3224-4477",
+      "website": "https://petrobras.com.br",
+      "logo": "petrobras_logo.webp",
+      "membershipLevel": 3,
+      "description": "Líder no setor de petróleo e gás, com operações globais.",
+      "industry": "Energia"
+    },
+    {
+      "companyName": "Vale",
+      "address": "Praia de Botafogo, 186 - Rio de Janeiro, RJ",
+      "phone": "+55 21 3485-5000",
+      "website": "https://vale.com",
+      "logo": "vale_logo.webp",
+      "membershipLevel": 3,
+      "description": "Uma das maiores mineradoras do mundo, especializada em minério de ferro e níquel.",
+      "industry": "Mineração"
+    },
+    {
+      "companyName": "Ambev",
+      "address": "Rua Dr. Renato Paes de Barros, 1017 - São Paulo, SP",
+      "phone": "+55 11 2122-1500",
+      "website": "https://ambev.com.br",
+      "logo": "ambev_logo.png",
+      "membershipLevel": 2,
+      "description": "Maior produtora de bebidas da América Latina, com marcas como Skol e Brahma.",
+      "industry": "Bebidas"
+    },
+    {
+      "companyName": "Itaú Unibanco",
+      "address": "Praça Alfredo Egydio de Souza Aranha, 100 - São Paulo, SP",
+      "phone": "+55 11 4004-4828",
+      "website": "https://itau.com.br",
+      "logo": "itau_logo.png",
+      "membershipLevel": 3,
+      "description": "Maior banco privado do Brasil, oferecendo serviços financeiros completos.",
+      "industry": "Bancário"
+    },
+    {
+      "companyName": "JBS",
+      "address": "Avenida Marginal Direita do Tietê, 500 - São Paulo, SP",
+      "phone": "+55 11 3144-4000",
+      "website": "https://jbs.com.br",
+      "logo": "jbs_logo.png",
+      "membershipLevel": 2,
+      "description": "Líder global na produção de alimentos à base de proteína animal.",
+      "industry": "Alimentação"
+    },
+    {
+      "companyName": "Eletrobras",
+      "address": "Rua da Quitanda, 196 - Rio de Janeiro, RJ",
+      "phone": "+55 21 2514-5151",
+      "website": "https://eletrobras.com",
+      "logo": "eletrobras_logo.png",
+      "membershipLevel": 2,
+      "description": "Maior empresa de energia elétrica da América Latina.",
+      "industry": "Energia"
+    },
+    {
+      "companyName": "WEG",
+      "address": "Avenida Prefeito Waldemar Grubba, 3000 - Jaraguá do Sul, SC",
+      "phone": "+55 47 3276-4000",
+      "website": "https://weg.net",
+      "logo": "weg_logo.png",
+      "membershipLevel": 3,
+      "description": "Referência global em motores elétricos e automação industrial.",
+      "industry": "Eletrônicos"
+    }
+  ]
+  
