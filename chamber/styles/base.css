@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --specialcolor: #003399;
+    --high-contrast-text-color: #FFEE93;
+    --special-button-color:#009B3A;
+    /* --larger-font: 2.2rem;
+    --large-font: 2rem;
+    --medium-font: 1.2rem;
+    --small-medium-font: 1rem;
+    --small-font: 0.8rem;
+    --smaller-font: 0.5rem; */
+}
+
+/* Defining the font to be used on the website */
+.open-sans-font {
+    font-family: "Open Sans", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+/* Stylin small view navigation */
+#menu {
+	align-self: start;
+    font-size: var(--large-font);
+	border: 0px;
+	background: none;
+	color: var(--high-contrast-text-color);
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.comp_nav {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #b62828;
+}
+
+.comp_nav_a{
+	display: none;
+    box-sizing: border-box;
+	text-align: center;
+    align-items: center;
+	text-decoration: none;
+	color: wheat;
+    height: 30px;
+}
+
+.comp_nav_a:hover {
+    
+    background-color: var(--high-contrast-text-color);
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.header-container{
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    background-color: var(--specialcolor);
+    padding: 10px;
+}
+.header-title-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Start of nav styling */
+
+
+/* Formating navigation component */
+
+.active{
+	background-color: black;
+	box-shadow: 0 0 10px var(--high-contrast-text-color);
+}
+.active::before {
+	content: "📍";/* just a wayfinding symbol for the user */
+}

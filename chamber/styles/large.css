@@ -1,0 +1,23 @@
+@media (min-width: 32em) {
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+    .comp_nav{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        width:auto;
+        height: 40px; 
+        background-color: black;
+        
+    }
+    .comp_nav_a{
+        display: flex;
+        align-items: center;
+        color: wheat;
+        text-decoration: none;
+        background-color: black;
+    }
+
+}
