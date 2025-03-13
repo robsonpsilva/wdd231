@@ -16,6 +16,7 @@
     --smaller-font: 0.5rem; */
 }
 
+
 /* Defining the font to be used on the website */
 .open-sans-font {
     font-family: "Open Sans", system-ui;
@@ -46,6 +47,7 @@
 	flex-direction: column;
 	list-style: none;
 	color: #b62828;
+    border: 1x solid red;
 }
 
 .comp_nav_a{
@@ -56,6 +58,7 @@
 	text-decoration: none;
 	color: wheat;
     height: 30px;
+    background-color: var(--specialcolor);
 }
 
 .comp_nav_a:hover {
@@ -96,3 +99,7 @@
 .active::before {
 	content: "📍";/* just a wayfinding symbol for the user */
 }
+
+/* End of nav styling */
+
+/* End of header styling */
