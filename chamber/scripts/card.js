@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.classList.add("card");
 
         const img = document.createElement("img");
-        img.src = `/chamber/images/${company.logo}`;
+        img.src = `assets/chamber/images/${company.logo}`;
         img.alt = `${company.companyName} Logo`;
 
         const cardArea = document.createElement("div");
