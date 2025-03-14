@@ -33,7 +33,12 @@ nav{
     padding: 2px;
 }
 
-
+h1 {
+    width: 80%;
+	text-align: left;
+	font-size: var(--large-font);
+	color: var(--specialcolor);
+}
 
 
 

@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
         img.src = `/chamber/images/${company.logo}`;
         img.alt = `${company.companyName} Logo`;
 
-        const cardBody = document.createElement("div");
-        cardBody.classList.add("card-body");
+        const cardArea = document.createElement("div");
+        cardArea.classList.add("card-body");
 
         const h3 = document.createElement("h3");
         h3.textContent = company.companyName;
@@ -38,22 +38,22 @@ document.addEventListener("DOMContentLoaded", () => {
         const website = document.createElement("a");
         website.href = company.website;
         website.target = "_blank";
-        website.textContent = "Visit website";
+        website.textContent = "Visit website ";
 
         const membership = document.createElement("span");
         membership.classList.add("membership", getMembershipClass(company.membershipLevel));
         membership.textContent = getMembershipClass(company.membershipLevel).charAt(0).toUpperCase() + getMembershipClass(company.membershipLevel).slice(1);
 
         // Adiciona os elementos ao card
-        cardBody.appendChild(h3);
-        cardBody.appendChild(address);
-        cardBody.appendChild(phone);
-        cardBody.appendChild(industry);
-        cardBody.appendChild(website);
-        cardBody.appendChild(membership);
+        cardArea.appendChild(h3);
+        cardArea.appendChild(address);
+        cardArea.appendChild(phone);
+        cardArea.appendChild(industry);
+        cardArea.appendChild(website);
+        cardArea.appendChild(membership);
 
         card.appendChild(img);
-        card.appendChild(cardBody);
+        card.appendChild(cardArea);
 
         return card;
     };
