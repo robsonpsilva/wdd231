@@ -59,21 +59,50 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
 
-    fetch("./data/member.json") 
-        .then(response => {
+        // Função assíncrona para carregar os dados
+    const loadCompaniesData = async () => {
+        try {
+            // Realiza a solicitação para obter os dados JSON
+            const response = await fetch("./data/member.json");
+            
+            // Verifica se a resposta foi bem-sucedida
             if (!response.ok) {
                 throw new Error("Error loading JSON file.");
             }
-            return response.json();
-        })
-        .then(companies => {
-            // Cria e insere os cards
+
+            // Converte a resposta para JSON
+            const companies = await response.json();
+
+            // Insere os cards no contêiner
             companies.forEach(company => {
-                const card = createCard(company);
+                const card = createCard(company); // Supõe que a função createCard já existe
                 mainContainer.appendChild(card);
             });
-        })
-        .catch(error => {
+        } catch (error) {
+            // Lida com possíveis erros
             console.error("Error loading data:", error);
-        });
+        }
+    };
+
+    // Chama a função para carregar os dados
+    loadCompaniesData();
+
+
+    // fetch("./data/member.json") 
+    //     .then(response => {
+    //         if (!response.ok) {
+    //             throw new Error("Error loading JSON file.");
+    //         }
+    //         return response.json();
+    //     })
+    //     .then(companies => {
+    //         // Cria e insere os cards
+    //         companies.forEach(company => {
+    //             const card = createCard(company);
+    //             mainContainer.appendChild(card);
+    //         });
+    //     })
+    //     .catch(error => {
+    //         console.error("Error loading data:", error);
+    //     });
 });
