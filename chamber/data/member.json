@@ -4,7 +4,7 @@
       "address": "Avenida República do Chile, 65 - Rio de Janeiro, RJ",
       "phone": "+55 21 3224-4477",
       "website": "https://petrobras.com.br",
-      "logo": "petrobras_logo.webp",
+      "logo": "petrobras_logo.svg",
       "membershipLevel": 3,
       "description": "Leader in the oil and gas sector, with global operations.",
       "industry": "Energy"
@@ -14,7 +14,7 @@
       "address": "Praia de Botafogo, 186 - Rio de Janeiro, RJ",
       "phone": "+55 21 3485-5000",
       "website": "https://vale.com",
-      "logo": "vale_logo.webp",
+      "logo": "vale_logo.svg",
       "membershipLevel": 3,
       "description": "One of the largest mining companies in the world, specializing in iron ore and nickel.",
       "industry": "Mining"
@@ -24,7 +24,7 @@
       "address": "Rua Dr. Renato Paes de Barros, 1017 - São Paulo, SP",
       "phone": "+55 11 2122-1500",
       "website": "https://ambev.com.br",
-      "logo": "ambev_logo.webp",
+      "logo": "ambev_logo.svg",
       "membershipLevel": 2,
       "description": "Largest beverage producer in Latin America, with brands such as Skol and Brahma.",
       "industry": "Drinks"
