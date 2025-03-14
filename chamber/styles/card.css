@@ -1,11 +1,15 @@
 .display1 {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin-top: 10px;
+    padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #f8f9fa;
+    width: 80%;
+    background: #fff; /* Fundo branco */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-radius: 10px; /* Bordas arredondadas */
 }
 
 .card {

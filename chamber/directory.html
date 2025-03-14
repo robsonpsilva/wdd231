@@ -19,9 +19,12 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/large.css">
     <link rel="stylesheet" href="./styles/card.css">
+    <link rel="stylesheet" href="./styles/list.css">
 
     <script src="scripts/base.js" defer></script>
     <script src="scripts/card.js" defer></script>
+    <script src="scripts/list.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
 
 </head>
 <body>
@@ -40,12 +43,48 @@
         <a href="#" class="comp_nav_a" target="_blank">Discover</a>
     </nav>
     <main>
-        <section class="display1">
+        <div class="section-text">
+            <h2>Welcome to the Chamber's Directory</h2>
+            <p>This is the Chamber of Commerce's member directory. 
+                Here you can learn more about our member companies, find suppliers and business partners. 
+                To view our members in a list, click on the "Member grid view" button; to view them in card format, 
+                click on the "Members cards view" button.</p>
+                <div class="button-container">
+                    <button id="showCards">Member cards view</button>
+                    <button id="showTable">Member grid view</button>
+                </div>
+        </div>
+        
+        <div class="display1" id = "display1">
 
-        </section>    
+        </div>
+        <div class="display2" id = "display2">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Logo</th>
+                        <th>Company Name</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Industry</th>
+                        <th>Membership Level</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody id="companyTable">
+                    <!-- Os dados serão carregados via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        
     </main>
-    <footer>
-
+    <footer id = "footer-section" class="footer-container">
+        <p>
+            &copy;<span id="currentyear"></span> 
+            <img src="images/brazil_round_icon_15_12.webp" class="img_footer" alt="brazilian-flag"> Robson Paulo da Silva 
+            <img src="images/brazil_round_icon_15_12.webp" class="img_footer" alt="brazilian-flag"> Brazil
+        </p> 
+        <p id="lastModified">Last Modification 07/28/2024 17:52:00</p>
     </footer>
 </body>
 </html>
