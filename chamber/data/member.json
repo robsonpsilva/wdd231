@@ -14,7 +14,7 @@
       "address": "Praia de Botafogo, 186 - Rio de Janeiro, RJ",
       "phone": "+55 21 3485-5000",
       "website": "https://vale.com",
-      "logo": "vale_logo.svg",
+      "logo": "vale-logo.svg",
       "membershipLevel": 3,
       "description": "One of the largest mining companies in the world, specializing in iron ore and nickel.",
       "industry": "Mining"
@@ -24,7 +24,7 @@
       "address": "Rua Dr. Renato Paes de Barros, 1017 - São Paulo, SP",
       "phone": "+55 11 2122-1500",
       "website": "https://ambev.com.br",
-      "logo": "ambev_logo.svg",
+      "logo": "ambev_logo.webp",
       "membershipLevel": 2,
       "description": "Largest beverage producer in Latin America, with brands such as Skol and Brahma.",
       "industry": "Drinks"
