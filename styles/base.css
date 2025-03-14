@@ -69,11 +69,12 @@ nav{
 }
 
 #menu::before {
-	content: "☰";
+	content: "\2630";
 }
 
 #menu.open::before {
-	content: "❎";
+	content: "\2716";
+    justify-content: flex-start;
 }
 
 .comp_nav {
@@ -271,10 +272,6 @@ nav{
     span {
         font-size: var(--larger-font);
     }
-
-
-
-
 /* End of nav styling */
 
 	#menu {
@@ -288,8 +285,7 @@ nav{
         align-items: center;
         width:auto;
         height: 40px; 
-        background-color: black;
-        
+        background-color: black;    
     }
     .comp_nav_a{
         display: flex;

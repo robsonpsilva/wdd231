@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+:root{
+    --specialcolor: #003399;
+    --high-contrast-text-color: #FFEE93;
+    --special-button-color:#009B3A;
+    --larger-font: 2.2rem;
+    --large-font: 2rem;
+    --medium-font: 1.2rem;
+    --small-medium-font: 1rem;
+    --small-font: 0.8rem;
+    --smaller-font: 0.5rem; 
+}
+
 main {
     display:grid;
     grid-template-columns: auto;
@@ -22,17 +34,7 @@ nav{
 }
 
 
-:root{
-    --specialcolor: #003399;
-    --high-contrast-text-color: #FFEE93;
-    --special-button-color:#009B3A;
-    /* --larger-font: 2.2rem;
-    --large-font: 2rem;
-    --medium-font: 1.2rem;
-    --small-medium-font: 1rem;
-    --small-font: 0.8rem;
-    --smaller-font: 0.5rem; */
-}
+
 
 
 /* Defining the font to be used on the website */
@@ -42,6 +44,11 @@ nav{
     font-style: normal;
     font-variation-settings: "wdth" 100;
   }
+
+#header-image{
+    height: 10vw;
+    width: 10vw;
+}
 
 /* Stylin small view navigation */
 #menu {
@@ -53,11 +60,11 @@ nav{
 }
 
 #menu::before {
-	content: "☰";
+	content: "\2630";
 }
 
 #menu.open::before {
-	content: "❎";
+	content: "\2716";
 }
 
 .comp_nav {
