@@ -27,8 +27,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     
 
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/base.js" defer></script>
+    
+    <script src="scripts/base.js" defer async></script>
+    <script src="scripts/getdates.js" defer async></script>
 </head>
 <body id = "body-section" class = "open-sans-font">
     <header class = "header-container">
@@ -75,10 +76,12 @@
         </section>
         <section class="card card-city-country">
             <h2 class = "cardtop"> Rio de Janeiro, Brazil</h2>
-            <figure class="cardfigure">
-                <img src="./images/small_cristo_redentor.webp" width="300" height="200"  alt="Rio de Janeiro">
+            <picture class="cardfigure">
+                <source srcset="./images/christ-medium.webp" media="(min-width: 501px)"> <!-- Para telas médias -->
+                <source srcset="./images/christ.webp" media="(max-width: 500px)"> <!-- Para telas pequenas -->
+                <img src="./images/christ.webp" class="cardimage"  alt="Rio de Janeiro">
                 <figcaption>Christ the Redeemer.</figcaption>
-            </figure>
+            </picture>
         </section>
         <section class="card botton-card">
             <h2 class = "cardtop"> Web and Computer Programming Certificate</h2>

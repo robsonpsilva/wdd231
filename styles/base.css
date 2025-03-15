@@ -252,6 +252,10 @@ nav{
     width: 90px;
     height: 30px;
 }
+.cardimage{
+    width: 300px;
+    height: 200px;
+}
 
 #header-image{
     border-radius: 10px;
@@ -324,5 +328,9 @@ nav{
         width: 150px;
         height: 30px;
     }
-
+    
+    .cardimage{
+        width: 450px;
+        height: 300px;
+    }
 }

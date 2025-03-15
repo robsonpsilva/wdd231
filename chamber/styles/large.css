@@ -19,5 +19,12 @@
         text-decoration: none;
         background-color: black;
     }
+    span,h1{
+        font-size: 2rem;
+    }
+
+    .section-text h2 {
+        font-size: 2rem;
+    }
 
 }

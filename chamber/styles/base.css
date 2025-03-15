@@ -36,7 +36,7 @@ nav{
 h1 {
     width: 80%;
 	text-align: left;
-	font-size: var(--large-font);
+	font-size: var(--medium-font);
 	color: var(--specialcolor);
 }
 
@@ -112,6 +112,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    
 }
 
 
@@ -140,7 +141,7 @@ h1 {
 
 .section-text h2 {
     margin: 0 0 10px 0; /* Espaço abaixo do título */
-    font-size: 1.8em;
+    font-size: var(--medium-font);
     color: #333;
 }
 
