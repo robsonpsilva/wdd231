@@ -254,8 +254,8 @@ nav{
 }
 
 #header-image{
+    border-radius: 10px;
     height: 10vw;
-    width: 10vw;
 }
 
 /* large view navigation ************************************/
