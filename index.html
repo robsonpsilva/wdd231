@@ -15,7 +15,7 @@
     <meta property="og:description" content="Main Page to WDD231 Activity">
 
     <meta property="og:image:type" content="image/webp">
-    <meta property="og:image" content="https://robsonpsilva.github.io/wdd231/images/SmallCristoRedentor.webp">
+    <meta property="og:image" content="https://robsonpsilva.github.io/wdd231/images/">
 
     <title>WDD 231: Web Frontend Development I</title>
 
@@ -27,14 +27,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     
 
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/base.js" defer></script>
+    
+    <script src="scripts/base.js" defer async></script>
+    <script src="scripts/getdates.js" defer async></script>
 </head>
 <body id = "body-section" class = "open-sans-font">
     <header class = "header-container">
         <div></div>
         <div class="header-title-image">
-            <img src="images/profile.webp" width="50" height="50" alt="My personal picture" id="header-image">
+            <img src="images/profile.webp" alt="My personal picture" id="header-image">
             <span>Robson Paulo da Silva</span>
         </div>
         <button id="menu" aria-label="Menu Button"></button>
@@ -75,10 +76,12 @@
         </section>
         <section class="card card-city-country">
             <h2 class = "cardtop"> Rio de Janeiro, Brazil</h2>
-            <figure class="cardfigure">
-                <img src="images/SmallCristoRedentor.webp" width="300" height="200"  alt="Rio de Janeiro">
+            <picture class="cardfigure">
+                <source srcset="./images/christ-medium.webp" media="(min-width: 501px)"> <!-- Para telas médias -->
+                <source srcset="./images/christ.webp" media="(max-width: 500px)"> <!-- Para telas pequenas -->
+                <img src="./images/christ.webp" class="cardimage"  alt="Rio de Janeiro">
                 <figcaption>Christ the Redeemer.</figcaption>
-            </figure>
+            </picture>
         </section>
         <section class="card botton-card">
             <h2 class = "cardtop"> Web and Computer Programming Certificate</h2>

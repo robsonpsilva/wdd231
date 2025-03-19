@@ -12,7 +12,7 @@
     --larger-font: 2.2rem;
     --large-font: 2rem;
     --medium-font: 1.2rem;
-    --small-medium-font: 1rem;
+    --small-medium-font: 1.1rem;
     --small-font: 0.8rem;
     --smaller-font: 0.5rem; 
 }
@@ -36,7 +36,12 @@ nav{
     font-size: var(--medium-font);
 }
 
-
+h1 {
+    width: 80%;
+	text-align: left;
+	font-size: var(--small-medium-font);
+	color: var(--specialcolor);
+}
 
 
 
@@ -142,7 +147,7 @@ nav{
 
 .section-text h2 {
     margin: 0 0 10px 0; /* Espaço abaixo do título */
-    font-size: 1.8em;
+    font-size: var(--medium-font);
     color: #333;
 }
 
