@@ -18,10 +18,13 @@
 
 </head>
 <body>
-    <header class = "header-container">
-        <div class="header-title-image">
+    <header id = "header-container" class = "header-container">
+        <div id = "header-title-image" class="header-title-image">
             <img src="images/rio_de_janeiro_chamber_small_image.webp" width="50" height="50" alt="My personal picture" id="header-image">
-            <span>Rio de Janeiro Chamber of Commerce</span>
+            <div id="chamber_name" class="chamber_name">
+                <span id="large_text" class = "large_text">Rio de Janeiro</span> 
+                <span id="small_text" class = "small_text">Chamber of Commerce</span>
+            </div>
         </div>
         <button id="menu" aria-label="Menu Button"></button>
         <nav class="comp_nav">
@@ -33,7 +36,22 @@
     </header>
     <main>
         <div class="hero">
-            <button>Keynote tickets</button>
+            <button button onclick="join_redirect()">Click here to join us</button>
+        </div>
+        <h1>Home</h1>
+        <div class="container">
+            <div class="card_index large-card_index">
+                <h2>Events</h2>
+                Card 1
+            </div>
+            <div class="card_index">
+                <h2>Current Weather</h2>
+                <span>Card 2</span>
+            </div>
+            <div class="card_index">
+                <h2>Current Forecast</h2>
+                <span>Card 3/span>    
+            </div>
         </div>
     </main>
     <footer id = "footer-section" class="footer-container">

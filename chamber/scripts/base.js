@@ -44,4 +44,9 @@ showTableButton.addEventListener('click', () => {
 	cardsContainer.style.display = 'none';
 });
 
+function join_redirect() {
+	window.location.href = "./directory.html"; // Substitua pelo URL da página desejada
+}
+
 showCardsButton.click();
+
