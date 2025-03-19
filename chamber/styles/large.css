@@ -1,4 +1,9 @@
 @media (min-width: 500px) {
+    
+    span {
+        color: var(--high-contrast-text-color);
+        font-size: var(--very-large-font);
+    }
     #menu {
 		display: none; /* hide hamburger button */
 	}
@@ -7,7 +12,7 @@
         flex-direction: row;
         justify-content:space-around;
         align-items: center;
-        width:auto;
+        width:40vw;
         height: 40px; 
         background-color: black;
         
