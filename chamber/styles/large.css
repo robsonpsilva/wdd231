@@ -1,5 +1,7 @@
 @media (min-width: 500px) {
-    
+    .container{
+        flex-direction: row;
+    }
    
     #menu {
 		display: none; /* hide hamburger button */
