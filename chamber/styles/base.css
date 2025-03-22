@@ -27,11 +27,7 @@ main {
     border: 3px solid var(--special-button-color);
 }
 
-nav{
-    background-color: var(--specialcolor);
-    padding: 2px;
-    font-size: var(--medium-font);
-}
+
 
 h1 {
     width: 80%;
