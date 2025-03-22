@@ -50,6 +50,9 @@ nav{
     padding: 2px;
 }
 
+.btn_hyde{
+    visibility: hidden;
+}
 
 /* Defining the font to be used on the website */
 .open-sans-font {
