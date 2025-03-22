@@ -10,11 +10,17 @@
 
     <link rel="icon" href="./images/favicon.ico">
 
+    <link rel="stylesheet" href="./styles/card_advertising.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/large.css">
+    
 
-    <script src="scripts/base.js" defer></script>
+    <script src="./scripts/base.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
+    <script src="./scripts/config.js" defer></script>
+    <script src = "./scripts/weather.js" defer></script>
+    <script src="./scripts/ad.js" defer></script>
+
 
 </head>
 <body>
@@ -46,29 +52,36 @@
             </div>
             <div class="card_index">
                 <h2>Current Weather</h2>
-                <span>Card 2</span>
+                <div class = "innercard">
+                    <img id="weathericon" src="./images/sunny.png" alt="weather icon">
+                    <div>
+                        <h3><span id="temperature">100</span>&deg; F</h3>
+                        <span id="weatherdesc">Sunny</span>
+                        <br>
+                        <span> High: <span id = "highTemperature">53</span> &deg;F </span> 
+                        <br>
+                        <span> Low: <span id = "lowTemperature">53</span> &deg;F </span> 
+                        <br>
+                        Humidity: <span id = "humidity">53</span>
+                        <br>
+                        Sunrise: <span id = "sunriseout">53</span>
+                        <br>
+                        Sunset: <span id = "sunsetout">53</span>
+                        <br>
+                        Wind Speed: <span id="windspeed">50</span> mph
+                    </div>      
+                </div>          
             </div>
             <div class="card_index">
                 <h2>Current Forecast</h2>
-                <span>Card 3</span>    
+                <div id="forecast_card">
+                    <div><span id="todayforecast">100</span>&deg;F </div>
+                    <div>Monday: <span id="tommorowforecast">100</span>&deg;F </div>
+                    <div>Tuesday: <span id="day_after_tommorowforecast">100</span>&deg;F </div>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="card_index_1">
-                <div>
-                    <h2>Bussines Name</h2>
-                    <span>Business Tag Line</span>
-                </div>
-                Card 4
-            </div>
-            <div class="card_index_1">
-                <div>
-                    <h2>Bussines Name</h2>
-                    <span>Business Tag Line</span>
-                </div>
-                Card 5
-            </div>
-        </div>
+        <div id="adContainer" class="ad-container"></div>
     </main>
     <footer id = "footer-section" class="footer-section" >
         <div class="footer-container">

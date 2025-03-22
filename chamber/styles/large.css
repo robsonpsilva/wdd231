@@ -1,6 +1,7 @@
 @media (min-width: 769px) {
     .container{
         flex-direction: row;
+        justify-content: space-between;
     }
     .footer-section{
         flex-direction: row;
@@ -34,6 +35,8 @@
         font-size: 2rem;
     }
 
-    
+    .ad-container {
+        flex-direction: row;
+    }
 
 }
