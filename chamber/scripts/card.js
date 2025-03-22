@@ -87,22 +87,5 @@ document.addEventListener("DOMContentLoaded", () => {
     // Chama a função para carregar os dados
     loadCompaniesData();
 
-
-    // fetch("./data/member.json") 
-    //     .then(response => {
-    //         if (!response.ok) {
-    //             throw new Error("Error loading JSON file.");
-    //         }
-    //         return response.json();
-    //     })
-    //     .then(companies => {
-    //         // Cria e insere os cards
-    //         companies.forEach(company => {
-    //             const card = createCard(company);
-    //             mainContainer.appendChild(card);
-    //         });
-    //     })
-    //     .catch(error => {
-    //         console.error("Error loading data:", error);
-    //     });
 });
+showCardsButton.click();

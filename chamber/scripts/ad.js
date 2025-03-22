@@ -5,12 +5,18 @@ const getRandomCompanies = (data, count) => {
     return shuffled.slice(0, count); // Retorna os primeiros 'count' itens
 };
 
+const filterCompaniesByMembershipLevel = (companies) => {
+    return companies.filter(company => company.membershipLevel === 2 || company.membershipLevel === 3);
+};
+
 const loadCompanies = async () => {
     try {
         const response = await fetch("./data/member.json");
         if (response.ok) {
+            
             const companies = await response.json();
-            const randomCompanies = getRandomCompanies(companies, 2);
+            const filteredCompanies = filterCompaniesByMembershipLevel(companies);
+            const randomCompanies = getRandomCompanies(filteredCompanies, 2);
             createCards(randomCompanies);
         } else {
             console.error("Erro ao carregar o arquivo JSON:", response.statusText);
