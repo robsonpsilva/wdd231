@@ -21,8 +21,9 @@
         background-color: black;
         border: 1px solid #ccc; /* Define a borda */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona a sombra */
-        padding: 10px; /* Espaçamento interno */
+        padding: 20px; /* Espaçamento interno */
         margin-bottom: 5px;
+        margin-right: 5px;
     }
     .comp_nav_a{
         display: flex;
