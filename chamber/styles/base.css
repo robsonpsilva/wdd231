@@ -19,8 +19,7 @@
 
 main {
     margin: 0;
-    display:grid;
-    grid-template-columns: auto;
+
     padding-top: 10px;
     justify-items: center; /* Centralização horizontal */
     background-color: #f8f9fa; /* Fundo suave */
