@@ -57,7 +57,6 @@ const createCards = (data) => {
         const details = document.createElement("div");
         details.classList.add("ad-details");
         details.innerHTML = `
-            <p>Email: Not Available</p>
             <p>Phone: ${company.phone}</p>
             <p>Website: <a href="${company.website}" target="_blank">${company.website}</a></p>
         `;
