@@ -88,4 +88,15 @@ document.addEventListener("DOMContentLoaded", () => {
     loadCompaniesData();
 
 });
+// Função para exibir apenas os cards
+showCardsButton.addEventListener('click', () => {
+	cardsContainer.style.display = 'flex';
+	tableContainer.style.display = 'none';
+});
+
+// Função para exibir apenas a tabela
+showTableButton.addEventListener('click', () => {
+	tableContainer.style.display = 'flex';
+	cardsContainer.style.display = 'none';
+});
 showCardsButton.click();
