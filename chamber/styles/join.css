@@ -47,6 +47,10 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
+input:required {border-width: 4px; border-left-color: #d70000;}
+input:focus {border-width: 4px; border-left-color: black; outline:none;}
+input:required:valid{border-left-color: green;}
+
 .membership-cards-container {
     margin-top: 10px;
     display: flex;

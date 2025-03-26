@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+input:-webkit-autofill{
+    -webkit-text-fill-color: #3D405B;
+}
+
 :root{
     --specialcolor: #003399;
     --high-contrast-text-color: #FFEE93;
