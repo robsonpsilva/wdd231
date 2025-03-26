@@ -43,3 +43,11 @@
     color: var(--high-contrast-text-color);
 }
 
+.comp_nav {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #b62828;
+}
+
+
