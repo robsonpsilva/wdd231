@@ -11,9 +11,9 @@ form {
 }
 
 fieldset{
-    border: 1px solid #ccc;
+    border: 1px solid var(--specialcolor);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 legend{
     font-size: var(--medium-font);
@@ -90,10 +90,10 @@ label {
 .membership-card {
     border: 1px solid var(--specialcolor);
     border-radius: 10px;
-    padding: 15px;
+    padding: 5px;
     text-align: center;
     box-shadow: 2px 2px 5px #f0f0f0;
-    width: 80%;
+    width: 90%;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 0.5s ease-out forwards;
@@ -183,7 +183,7 @@ label {
         width: 400px;
     }
     #membership-level-cards{
-        margin-top: 13px;
+        margin-top: 11px;
     }
 }
 
