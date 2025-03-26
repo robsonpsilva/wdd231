@@ -17,7 +17,7 @@ fieldset{
 }
 legend{
     font-size: var(--medium-font);
-    color: var(--special-button-color)
+    color: darkgreen;
 }
 
 input[type="text"],
@@ -37,7 +37,7 @@ input[type="email"]::placeholder {
 }
 
 input[type="submit"] {
-    background-color: #007bff;
+    background-color: var(--specialcolor);
     color: white;
     padding: 10px 15px;
     border: none;
@@ -98,8 +98,8 @@ label {
     transform: translateY(20px);
     animation: fadeIn 0.5s ease-out forwards;
     cursor: pointer;
-    color: var(--specialcolor);
-    background-color: var(--high-contrast-text-color);
+    color: black;
+    background-color:#FFAA00;
 }
 
 .membership-card:nth-child(2) {
@@ -114,13 +114,13 @@ label {
     animation-delay: 0.6s;
 }
 
-.membership-card h3 {
+.membership-card h2 {
     margin-top: 0;
 }
 
 .membership-card a {
     text-decoration: none;
-    color: #007bff;
+    color: blue;
 }
 
 .modal {
