@@ -76,8 +76,8 @@ label {
 
 
 .membership-card {
-    border: 1px solid #eee;
-    border-radius: 5px;
+    border: 1px solid var(--specialcolor);
+    border-radius: 10px;
     padding: 15px;
     text-align: center;
     box-shadow: 2px 2px 5px #f0f0f0;
@@ -86,7 +86,8 @@ label {
     transform: translateY(20px);
     animation: fadeIn 0.5s ease-out forwards;
     cursor: pointer;
-    background-color: wheat;
+    color: var(--specialcolor);
+    background-color: var(--high-contrast-text-color);
 }
 
 .membership-card:nth-child(2) {
