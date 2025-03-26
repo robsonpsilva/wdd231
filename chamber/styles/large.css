@@ -41,5 +41,9 @@
     .ad-container {
         flex-direction: row;
     }
+    .hero{
+        background-image: url('../images/rio-de-janeiro.webp'); 
+
+    }
 
 }
