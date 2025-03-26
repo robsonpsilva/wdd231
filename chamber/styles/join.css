@@ -145,6 +145,10 @@ label {
     position: relative;
 }
 
+::backdrop{
+    background-color: rgb(0 0 0/0.9);
+}
+
 .close-button {
     color: #aaa;
     float: right;

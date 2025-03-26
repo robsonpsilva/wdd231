@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: 'lastName', label: "Last Name:" },
         { name: 'email', label: "Email:" },
         { name: 'mobilePhone', label: "Mobile Phone Number:" },
-        { name: 'organizationName', label: "Organization Naame:" },
+        { name: 'organizationName', label: "Organization Name:" },
         { name: 'timestamp', label: "Submission Date and Time:" }
     ];
 
