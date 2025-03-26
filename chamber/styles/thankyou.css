@@ -17,8 +17,9 @@ html {
 }
 
 h1 {
-    color: #007bff; /* Example primary color */
+    color: black; /* Example primary color */
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .form-data-container {
