@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Main page to Rio de Janeiro Chamber of Commerce. This is a place to promote your business, find business partners, events and useful information to help your business grow and succeed!">
+    <meta name="author" content="Robson Paulo da Silva">
+
+    <title>Rio de Janeiro Chamber of Commerce</title>
+
+    <link rel="icon" href="./images/favicon.ico">
+
+    
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <link rel="stylesheet" href="./styles/join.css">
+    
+    <script src="../scripts/getdates.js" defer></script>
+    <script src ="./scripts/join.js" defer></script>
+
+    <meta property="og:title" content="Directory to Rio de Janeiro Chamber of Commerce ">
+    <meta property="og:url" content="https://robsonpsilva.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Directory Page of Rio de Janeiro Chamber of Commerce">
+
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image" content="https://robsonpsilva.github.io/wdd231/chamber/images/rio_de_janeiro_chamber_small_image.webp">
+
+
+</head>
+<body>
+    <header id = "header-container" class = "header-container">
+        <div id = "header-title-image" class="header-title-image">
+            <img src="images/rio_small_medium.png" width="200" height="200" alt="Rio de Janeiro Chamber" id="header-image">
+            <div id="chamber_name" class="chamber_name">
+                <span id="large_text" class = "large_text">Rio de Janeiro</span> 
+                <span id="small_text" class = "small_text">Chamber of Commerce</span>
+            </div>
+        </div>
+        <button id="menu" aria-label="Menu Button"></button>
+        <nav class="comp_nav">
+            <a href="./index.html" class="comp_nav_a active">Home</a>
+            <a href="./directory.html" class="comp_nav_a">Directory</a>
+            <a href="#" class="comp_nav_a" target="_self">Join</a>
+            <a href="#" class="comp_nav_a" target="_self">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <form action="thankyou.html" method="get">
+            <div class="form-group">
+                <label for="firstName">
+                    First Name (required):
+                    <input type="text" id="firstName" name="firstName" title="Enter your first name" required autocomplete="given-name">
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <label for="lastName">
+                    Last Name (required):
+                    <input type="text" id="lastName" name="lastName" title="Enter your last name" required autocomplete="family-name">
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <label for="organizationalTitle">
+                    Organizational Title:
+                    <input type="text" id="organizationalTitle" name="organizationalTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-zÀ-ú\s-]{7,}">
+                    <small>Accepts letters, hyphens, and spaces only (minimum 7 characters).</small>
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">
+                    Email (required):
+                    <input type="email" id="email" name="email" title="Enter your email address" required autocomplete="email" placeholder="exemplo@email.com">
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <label for="mobilePhone">
+                    Phone Number (required):
+                    <input type="tel" id="mobilePhone" name="mobilePhone" title="Enter your mobile phone number" required autocomplete="tel">
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <label for="organizationName">
+                    Business Name (required):
+                    <input type="text" id="organizationName" name="organizationName" title="Enter the business/organization's name" required autocomplete="organization">
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <label for="membershipLevel">
+                    Membership Level:
+                    <select id="membershipLevel" name="membershipLevel" title="Select your desired membership level">
+                        <option value="NP">NP Membership (Non-Profit - No Fee)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <label for="organizationDescription">
+                    Business Description:
+                    <textarea id="organizationDescription" name="organizationDescription" title="Enter a brief description of your business/organization"></textarea>
+                </label>
+            </div>
+    
+            <input type="hidden" id="timestamp" name="timestamp">
+    
+            <div class="form-group">
+                <input type="submit" value="Submit Application">
+            </div>
+        </form>
+    
+        <div class="membership-cards-container">
+            <div class="membership-card" onclick="openModal('npModal')">
+                <h3>NP Membership</h3>
+                <a href="#npBenefits">Learn More</a>
+            </div>
+            <div class="membership-card" onclick="openModal('bronzeModal')">
+                <h3>Bronze Membership</h3>
+                <a href="#bronzeBenefits">Learn More</a>
+            </div>
+            <div class="membership-card" onclick="openModal('silverModal')">
+                <h3>Silver Membership</h3>
+                <a href="#silverBenefits">Learn More</a>
+            </div>
+            <div class="membership-card" onclick="openModal('goldModal')">
+                <h3>Gold Membership</h3>
+                <a href="#goldBenefits">Learn More</a>
+            </div>
+        </div>
+    
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('npModal')">&times;</span>
+                <h3>NP Membership Benefits (Non-Profit)</h3>
+                <p>Benefits for non-profit organizations include:</p>
+                <ul>
+                    <li>Access to our network of members.</li>
+                    <li>Listing in our non-profit directory.</li>
+                    <li>Opportunity to participate in community events.</li>
+                    </ul>
+            </div>
+        </div>
+    
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('bronzeModal')">&times;</span>
+                <h3>Bronze Membership Benefits</h3>
+                <p>Bronze membership offers:</p>
+                <ul>
+                    <li>Basic listing in our member directory.</li>
+                    <li>Access to member-only newsletters.</li>
+                    <li>Discount on select events.</li>
+                    </ul>
+            </div>
+        </div>
+    
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('silverModal')">&times;</span>
+                <h3>Silver Membership Benefits</h3>
+                <p>Silver membership includes all Bronze benefits plus:</p>
+                <ul>
+                    <li>Enhanced listing in our member directory.</li>
+                    <li>Access to exclusive training webinars.</li>
+                    <li>Increased discounts on events.</li>
+                    </ul>
+            </div>
+        </div>
+    
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('goldModal')">&times;</span>
+                <h3>Gold Membership Benefits</h3>
+                <p>Gold membership includes all Silver benefits plus:</p>
+                <ul>
+                    <li>Spotlight position on our homepage (rotating).</li>
+                    <li>Priority access to special events.</li>
+                    <li>Significant discounts on all events and training.</li>
+                    </ul>
+            </div>
+        </div>    
+    </main>
+    <footer id = "footer-section" class="footer-section" >
+        <div class="footer-container">
+            <h3 class="footer heading">Rio de Janeiro Chamber of Commerce</h3>
+            <p>
+                Avenida Presidente Vargas, 30000,
+                <br>Centro, Rio de Janeiro - RJ, Brazil
+                <br>riochamber@chamber.com.br
+                <br>+55 21 9    90009999
+            </p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/" target="_blank"><img src="./images/youtube-icon.png" alt="Link to Youtube"></a>
+            <a href="https://x.com" target="_blank"><img src="./images/twitter-icon.png" alt="Link to Twitter"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin-icon.png" alt="Link to LinkedIn"></a>
+          </div>
+        <div class="footer-container">
+            <h3>WDD231 Class Project</h3>
+            <p>
+                &copy;<span id="currentyear"></span> 
+                <img src="../images/brazil_icon.webp" class="img_footer" alt="brazilian-flag"> Robson Paulo da Silva 
+                <img src="../images/brazil_icon.webp" class="img_footer" alt="brazilian-flag"> Brazil
+            </p> 
+            <p id="lastModified">Last Modification 07/28/2024 17:52:00</p>
+        </div>
+    </footer>
+</body>
+</html>
