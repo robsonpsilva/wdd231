@@ -25,8 +25,6 @@
 
     <meta property="og:image:type" content="image/webp">
     <meta property="og:image" content="https://robsonpsilva.github.io/wdd231/chamber/images/rio_de_janeiro_chamber_small_image.webp">
-
-
 </head>
 <body>
     <header id = "header-container" class = "header-container">
@@ -46,77 +44,78 @@
         </nav>
     </header>
     <main>
-        <h1>Join Us Form</h1>
+        
         <form action="thankyou.html" method="get">
-            <div class="form-group">
-                <label for="firstName">
-                    First Name (required):
-                    <input type="text" id="firstName" name="firstName" title="Enter your first name" required autocomplete="given-name">
-                </label>
-            </div>
-    
-            <div class="form-group">
-                <label for="lastName">
-                    Last Name (required):
-                    <input type="text" id="lastName" name="lastName" title="Enter your last name" required autocomplete="family-name">
-                </label>
-            </div>
-    
-            <div class="form-group">
-                <label for="organizationalTitle">
-                    Organizational Title:
-                    <input type="text" id="organizationalTitle" name="organizationalTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-zÀ-ú\s-]{7,}">
-                    <small>Accepts letters, hyphens, and spaces only (minimum 7 characters).</small>
-                </label>
-            </div>
-    
-            <div class="form-group">
-                <label for="email">
-                    Email (required):
-                    <input type="email" id="email" name="email" title="Enter your email address" required autocomplete="email" placeholder="exemplo@email.com">
-                </label>
-            </div>
-    
-            <div class="form-group">
-                <label for="mobilePhone">
-                    Mobile Phone Number (required):
-                    <input type="tel" id="mobilePhone" name="mobilePhone" title="Enter your mobile phone number" required autocomplete="tel">
-                </label>
-            </div>
-    
-            <div class="form-group">
-                <label for="organizationName">
-                    Business Name (required):
-                    <input type="text" id="organizationName" name="organizationName" title="Enter the business/organization's name" required autocomplete="organization">
-                </label>
-            </div>
-    
-            <div class="form-group">
-                <label for="membershipLevel">
-                    Membership Level:
-                    <select id="membershipLevel" name="membershipLevel" title="Select your desired membership level">
-                        <option value="NP">NP Membership (Non-Profit - No Fee)</option>
-                        <option value="Bronze">Bronze Membership</option>
-                        <option value="Silver">Silver Membership</option>
-                        <option value="Gold">Gold Membership</option>
-                    </select>
-                </label>
-            </div>
-    
-            <div class="form-group">
-                <label for="organizationDescription">
-                    Business Description:
-                    <textarea id="organizationDescription" name="organizationDescription" title="Enter a brief description of your business/organization"></textarea>
-                </label>
-            </div>
-    
-            <input type="hidden" id="timestamp" name="timestamp">
-    
-            <div class="form-group">
-                <input type="submit" value="Submit Application">
-            </div>
-        </form>
-    
+            <h1>Join Us Form</h1>
+            <fieldset>
+                <legend>Membership application form</legend>
+                <div class="form-group">
+                    <label for="firstName">
+                        First Name (required):
+                        <input type="text" id="firstName" name="firstName" title="Enter your first name" required autocomplete="given-name">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">
+                        Last Name (required):
+                        <input type="text" id="lastName" name="lastName" title="Enter your last name" required autocomplete="family-name">
+                    </label>
+                </div>
+        
+                <div class="form-group">
+                    <label for="organizationalTitle">
+                        Organizational Title:
+                        <input type="text" id="organizationalTitle" name="organizationalTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-zÀ-ú\s-]{7,}">
+                        <small>Accepts letters, hyphens, and spaces only (minimum 7 characters).</small>
+                    </label>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">
+                        Email (required):
+                        <input type="email" id="email" name="email" title="Enter your email address" required autocomplete="email" placeholder="exemplo@email.com">
+                    </label>
+                </div>
+        
+                <div class="form-group">
+                    <label for="mobilePhone">
+                        Mobile Phone Number (required):
+                        <input type="tel" id="mobilePhone" name="mobilePhone" title="Enter your mobile phone number" required autocomplete="tel">
+                    </label>
+                </div>
+        
+                <div class="form-group">
+                    <label for="organizationName">
+                        Business Name (required):
+                        <input type="text" id="organizationName" name="organizationName" title="Enter the business/organization's name" required autocomplete="organization">
+                    </label>
+                </div>
+        
+                <div class="form-group">
+                    <label for="membershipLevel">
+                        Membership Level:
+                        <select id="membershipLevel" name="membershipLevel" title="Select your desired membership level">
+                            <option value="NP">NP Membership (Non-Profit - No Fee)</option>
+                            <option value="Bronze">Bronze Membership</option>
+                            <option value="Silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
+                        </select>
+                    </label>
+                </div>
+        
+                <div class="form-group">
+                    <label for="organizationDescription">
+                        Business Description:
+                        <textarea id="organizationDescription" name="organizationDescription" title="Enter a brief description of your business/organization"></textarea>
+                    </label>
+                </div>
+                <input type="hidden" id="timestamp" name="timestamp">
+                <div class="form-group">
+                    <input type="submit" value="Submit Application">
+                </div>
+            </fieldset>
+            
+        </form> 
         <div class="membership-cards-container">
             <div class="membership-card" onclick="openModal('npModal')">
                 <h3>NP Membership</h3>
@@ -135,7 +134,6 @@
                 <a href="#gold-benefits">Learn More</a>
             </div>
         </div>
-    
         <div id="npModal" class="modal">
             <div class="modal-content">
                 <span class="close-button" onclick="closeModal('npModal')">&times;</span>
@@ -148,7 +146,6 @@
                     </ul>
             </div>
         </div>
-    
         <div id="bronzeModal" class="modal">
             <div class="modal-content">
                 <span class="close-button" onclick="closeModal('bronzeModal')">&times;</span>
@@ -161,7 +158,6 @@
                     </ul>
             </div>
         </div>
-    
         <div id="silverModal" class="modal">
             <div class="modal-content">
                 <span class="close-button" onclick="closeModal('silverModal')">&times;</span>
@@ -174,7 +170,6 @@
                     </ul>
             </div>
         </div>
-    
         <div id="goldModal" class="modal">
             <div class="modal-content">
                 <span class="close-button" onclick="closeModal('goldModal')">&times;</span>
@@ -186,7 +181,7 @@
                     <li>Significant discounts on all events and training.</li>
                     </ul>
             </div>
-        </div>    
+        </div> 
     </main>
     <footer id = "footer-section" class="footer-section" >
         <div class="footer-container">
