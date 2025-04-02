@@ -1,0 +1,15 @@
+[
+    {
+      "name": "Arcos da Lapa",
+      "address": "Cardinal Câmara Square, in the Central Zone of Rio de Janeiro",
+      "description": "The Lapa Arches, also known as the Carioca Aqueduct, are one of the most famous postcards of Rio de Janeiro, Brazil.",
+      "image": "images/item1.webp"
+    },
+    {
+      "name": "Rio de Janeiro Botanical Garden",
+      "address": "Rua Jardim Botânico, 1008, Jardim Botânico, Rio de Janeiro",
+      "description": "The Rio de Janeiro Botanical Garden is one of the most beautiful and important parks in Brazil, located in the southern part of the city. Founded in 1808 by D. João VI, the space is home to a rich diversity of national and international flora, including rare and endangered species.",
+      "image": "images/jardim-botanico.webp"
+    }
+]
+  

@@ -7,28 +7,34 @@ main {
     grid-template-columns: 1fr;
 }
 .cards {
-    grid-area: cards;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 16px;
+    gap: 1rem;
+  }
+  
+.card {
+border: 1px solid #ddd;
+padding: 1rem;
+text-align: center;
 }
+
+.card img:hover {
+transform: scale(1.1);
+transition: transform 0.3s;
+}
+
 .sidebar {
-    grid-area: sidebar;
+background-color: #f4f4f4;
+padding: 1rem;
 }
 
 
 @media (min-width: 641px) and (max-width: 1024px) {
-    main {
-        grid-template-areas:
-            "cards sidebar";
-        grid-template-columns: 2fr 1fr;
-    }
-}
-
-@media (min-width: 1025px) {
-    main {
-        grid-template-areas:
-            "cards sidebar";
-        grid-template-columns: 3fr 1fr;
+    .cards {
+      grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+      grid-template-columns: 1fr 1fr;
     }
 }
