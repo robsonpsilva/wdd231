@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Main page to Rio de Janeiro Chamber of Commerce. This is a place to promote your business, find business partners, events and useful information to help your business grow and succeed!">
+    <meta name="author" content="Robson Paulo da Silva">
+
+    <title>Rio de Janeiro Chamber of Commerce</title>
+
+    <link rel="icon" href="./images/favicon.ico">
+
+    <link rel="stylesheet" href="./styles/card_advertising.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    
+
+    <script src="./scripts/base.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="./scripts/config.js" defer></script>
+    <script src = "./scripts/weather.js" defer></script>
+    <script src="./scripts/ad.js" defer></script>
+
+    <meta property="og:title" content="Directory to Rio de Janeiro Chamber of Commerce ">
+    <meta property="og:url" content="https://robsonpsilva.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Directory Page of Rio de Janeiro Chamber of Commerce">
+
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image" content="https://robsonpsilva.github.io/wdd231/chamber/images/rio_de_janeiro_chamber_small_image.webp">
+
+
+</head>
+<body>
+    <header id = "header-container" class = "header-container">
+        <div id = "header-title-image" class="header-title-image">
+            <img src="images/rio_small_medium.png" width="200" height="200" alt="Rio de Janeiro Chamber" id="header-image">
+            <div id="chamber_name" class="chamber_name">
+                <span id="large_text" class = "large_text">Rio de Janeiro</span> 
+                <span id="small_text" class = "small_text">Chamber of Commerce</span>
+            </div>
+        </div>
+        <button id="menu" aria-label="Menu Button"></button>
+        <nav class="comp_nav">
+            <a href="./index.html" class="comp_nav_a active">Home</a>
+            <a href="./directory.html" class="comp_nav_a">Directory</a>
+            <a href="./join.html" class="comp_nav_a">Join</a>
+            <a href="#" class="comp_nav_a" target="_self">Discover</a>
+        </nav>
+    </header>
+    <main>
+      
+    </main>
+    <footer id = "footer-section" class="footer-section" >
+        <div class="footer-container">
+            <h3 class="footer heading">Rio de Janeiro Chamber of Commerce</h3>
+            <p>
+                Avenida Presidente Vargas, 30000,
+                <br>Centro, Rio de Janeiro - RJ, Brazil
+                <br>riochamber@chamber.com.br
+                <br>+55 21 9    90009999
+            </p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/" target="_blank"><img src="./images/youtube-icon.png" alt="Link to Youtube"></a>
+            <a href="https://x.com" target="_blank"><img src="./images/twitter-icon.png" alt="Link to Twitter"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin-icon.png" alt="Link to LinkedIn"></a>
+          </div>
+        <div class="footer-container">
+            <h3>WDD231 Class Project</h3>
+            <p>
+                &copy;<span id="currentyear"></span> 
+                <img src="../images/brazil_icon.webp" class="img_footer" alt="brazilian-flag"> Robson Paulo da Silva 
+                <img src="../images/brazil_icon.webp" class="img_footer" alt="brazilian-flag"> Brazil
+            </p> 
+            <p id="lastModified">Last Modification 07/28/2024 17:52:00</p>
+        </div>
+    </footer>
+</body>
+</html>
