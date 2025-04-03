@@ -16,6 +16,36 @@
       "address": "Parque Nacional da Tijuca, na Estrada das Canoas, em São Conrado, Rio de Janeiro",
       "description": "Pedra Bonita is a famous tourist spot in Tijuca National Park, in Rio de Janeiro. Located at an altitude of about 693 meters, it offers an accessible trail and spectacular panoramic views of landmarks such as Morro Dois Irmãos, Pedra da Gávea and the city of Rio. It is also very popular with hang gliders and paragliders, due to its launch ramp. A perfect destination for adventure and nature lovers!",
       "image": "images/pedra-bonita.webp"
+    },
+    {
+      "name": "Copacabana beach",
+      "address": "Atlântica avenue, Copacabana, Rio de Janeiro",
+      "description": "Copacabana Beach, located in Rio de Janeiro, is one of the most iconic beaches in the world. Stretching about 4 kilometers along the Atlantic Ocean, it is known for its vibrant atmosphere, soft golden sands, and the famous black-and-white wave-patterned promenade. Visitors enjoy swimming, sunbathing, and lively cultural events, while also admiring stunning views of Sugarloaf Mountain. A must-visit destination for beach lovers!",
+      "image": "images/praia-de-copacabana.webp"
+    },
+    {
+      "name": "Cristo Redentor",
+      "address": "Parque Nacional da Tijuca, no Alto da Boa Vista, Rio de Janeiro",
+      "description": "Christ the Redeemer is an iconic statue located atop Corcovado Mountain in Rio de Janeiro, Brazil. Standing at 38 meters tall, it is one of the New Seven Wonders of the World and a symbol of peace and Christianity. Offering breathtaking panoramic views of the city, the statue attracts millions of visitors every year. A true landmark of Brazil!",
+      "image": "images/cristo-redentor.webp"
+    },
+    {
+      "name": "Pão de açucar",
+      "address": "Urca neighborhood, in Rio de Janeiro, Brazil",
+      "description": "Sugarloaf Mountain is a stunning natural landmark in Rio de Janeiro, Brazil, famous for its unique granite peak rising 396 meters above the Guanabara Bay. Visitors can take a cable car ride to enjoy breathtaking panoramic views of the city, beaches, and surrounding mountains. It's a must-see attraction and a symbol of Rio's beauty!",
+      "image": "images/pao-de-acucar.webp"
+    },
+    {
+      "name": "Rodrigo de Freitas Lake",
+      "address": "Borges de Medeiros Avenue, in the Lagoa neighborhood, in the South Zone of Rio de Janeiro",
+      "description": "Rodrigo de Freitas Lagoon is a picturesque lagoon located in Rio de Janeiro, Brazil, surrounded by lush greenery and iconic views of the city, including the Christ the Redeemer statue and the mountains. It’s a popular spot for outdoor activities like jogging, cycling, and paddle boating, as well as a peaceful place to relax and enjoy nature.",
+      "image": "images/lagoa-rodrigo-de-freitas.webp"
+    },
+    {
+      "name": "National museum",
+      "address": "Quinta da Boa Vista - São Cristóvão, Rio de Janeiro",
+      "description": "The National Museum of Rio de Janeiro, founded in 1818, was one of the oldest and most important scientific and historical institutions in Brazil. Located in the former São Cristóvão Palace, it housed vast collections of natural history, anthropology, and archaeology, including artifacts from ancient Egypt, indigenous cultures, and fossils. Tragically, much of the museum was destroyed by a fire in 2018, but efforts are underway to rebuild and restore its legacy.",
+      "image": "images/museu-nacional.webp"
     }
 ]
   
