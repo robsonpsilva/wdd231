@@ -28,10 +28,12 @@ fetch('./data/items.json')
     const cardsContainer = document.getElementById('cards-container');
 
     // Create cards dynamically
+    let i = 1;
     data.forEach(item => {
       const card = document.createElement('article');
       card.classList.add('card');
-
+      card.classList.add(`card${i}`);
+      i++;
       card.innerHTML = `
         <h2>${item.name}</h2>
         <figure>
