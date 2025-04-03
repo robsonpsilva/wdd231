@@ -1,11 +1,39 @@
 main {
-    grid-area: main;
-    display: grid;
-    grid-template-areas:
-        "cards"
-        "sidebar";
-    grid-template-columns: 1fr;
+    display:flex;
+    flex-direction: column;
 }
+h1{
+  margin-left: 10px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Garante que fique acima do conteúdo */
+  visibility: hidden; /* Inicialmente oculto */
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
+}
+
+.message-area {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay.show {
+  visibility: visible; /* Torna visível */
+  opacity: 1; /* Mostra com animação */
+}
+
 .cards {
     display: grid;
     gap: 1rem;
@@ -23,7 +51,7 @@ main {
   }
   
 .card {
-border: 1px solid #ddd;
+border: 3px solid #ddd;
 padding: 1rem;
 text-align: center;
 }
@@ -33,10 +61,6 @@ transform: scale(1.1);
 transition: transform 0.3s;
 }
 
-.sidebar {
-background-color: #f4f4f4;
-padding: 1rem;
-}
 
 .card1 { grid-area: card1; }
 .card2 { grid-area: card2; }
@@ -46,6 +70,11 @@ padding: 1rem;
 .card6 { grid-area: card6; }
 .card7 { grid-area: card7; }
 .card8 { grid-area: card8; }
+
+.justified {
+  text-align: justify; /* Alinha o texto de forma justificada */
+  font-size: small;
+}
 
 @media (min-width: 641px) and (max-width: 1024px) {
     .cards {

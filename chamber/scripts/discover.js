@@ -40,7 +40,9 @@ fetch('./data/items.json')
           <img src="${item.image}" alt="${item.name}">
         </figure>
         <address>${item.address}</address>
-        <p>${item.description}</p>
+        <br>
+        <p class = "justified">${item.description}</p>
+        <br>
         <button>Learn More</button>
       `;
 
@@ -50,3 +52,17 @@ fetch('./data/items.json')
   .catch(error => {
     console.error('Error loading JSON:', error);
   });
+
+  function showOverlay() {
+    const overlay = document.getElementById("overlay");
+    overlay.classList.add("show");
+}
+
+
+function closeOverlay() {
+    const overlay = document.getElementById("overlay");
+    overlay.classList.remove("show");
+}
+
+
+window.onload = () => showOverlay();

@@ -14,13 +14,13 @@
     {
       "name": "Pedra Bonita",
       "address": "Parque Nacional da Tijuca, na Estrada das Canoas, em São Conrado, Rio de Janeiro",
-      "description": "Pedra Bonita is a famous tourist spot in Tijuca National Park, in Rio de Janeiro. Located at an altitude of about 693 meters, it offers an accessible trail and spectacular panoramic views of landmarks such as Morro Dois Irmãos, Pedra da Gávea and the city of Rio. It is also very popular with hang gliders and paragliders, due to its launch ramp. A perfect destination for adventure and nature lovers!",
+      "description": "Pedra Bonita is a famous tourist spot in Tijuca National Park, in Rio de Janeiro. Located at an altitude of about 693 meters, it offers an accessible trail and spectacular panoramic views of landmarks such as Morro Dois Irmãos, Pedra da Gávea and the city of Rio.",
       "image": "images/pedra-bonita.webp"
     },
     {
-      "name": "Copacabana beach",
+      "name": "Copacabana Beach",
       "address": "Atlântica avenue, Copacabana, Rio de Janeiro",
-      "description": "Copacabana Beach, located in Rio de Janeiro, is one of the most iconic beaches in the world. Stretching about 4 kilometers along the Atlantic Ocean, it is known for its vibrant atmosphere, soft golden sands, and the famous black-and-white wave-patterned promenade. Visitors enjoy swimming, sunbathing, and lively cultural events, while also admiring stunning views of Sugarloaf Mountain. A must-visit destination for beach lovers!",
+      "description": "Copacabana Beach, located in Rio de Janeiro, is one of the most iconic beaches in the world. Stretching about 4 kilometers along the Atlantic Ocean, it is known for its vibrant atmosphere, soft golden sands, and the famous black-and-white wave-patterned promenade.",
       "image": "images/praia-de-copacabana.webp"
     },
     {
@@ -44,7 +44,7 @@
     {
       "name": "National museum",
       "address": "Quinta da Boa Vista - São Cristóvão, Rio de Janeiro",
-      "description": "The National Museum of Rio de Janeiro, founded in 1818, was one of the oldest and most important scientific and historical institutions in Brazil. Located in the former São Cristóvão Palace, it housed vast collections of natural history, anthropology, and archaeology, including artifacts from ancient Egypt, indigenous cultures, and fossils. Tragically, much of the museum was destroyed by a fire in 2018, but efforts are underway to rebuild and restore its legacy.",
+      "description": "The National Museum of Rio de Janeiro, founded in 1818, was one of the oldest and most important scientific and historical institutions in Brazil. Located in the former São Cristóvão Palace, it housed vast collections of natural history, anthropology, and archaeology, including artifacts from ancient Egypt, indigenous cultures, and fossils.",
       "image": "images/museu-nacional.webp"
     }
 ]
