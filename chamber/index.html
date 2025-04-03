@@ -45,16 +45,52 @@
             <a href="./index.html" class="comp_nav_a active">Home</a>
             <a href="./directory.html" class="comp_nav_a">Directory</a>
             <a href="./join.html" class="comp_nav_a">Join</a>
-            <a href="#" class="comp_nav_a" target="_self">Discover</a>
+            <a href="./discover.html" class="comp_nav_a" target="_self">Discover</a>
         </nav>
     </header>
     <main>
-        <section class="cards">
-            <!-- Cartões serão inseridos aqui -->
-        </section>
-        <aside class="sidebar">
-            <p id="visit-message"></p>
-        </aside>
+        <div class="hero">
+            <button button onclick="join_redirect()">Click here to join us</button>
+        </div>
+        <h1>Home</h1>
+        <div class="container">
+            <div class="card_index large_card_index">
+                <h2>Events</h2>
+                <span>Card 1</span>
+            </div>
+            <div class="card_index">
+                <h2>Current Weather</h2>
+                <div class = "innercard">
+                    <img id="weathericon" src="./images/sunny.png" alt="weather icon">
+                    <div>
+                        <h3><span id="temperature">100</span>&deg; F</h3>
+                        <span id="weatherdesc">Sunny</span>
+                        <br>
+                        <span> High: <span id = "highTemperature">53</span> &deg;F </span> 
+                        <br>
+                        <span> Low: <span id = "lowTemperature">53</span> &deg;F </span> 
+                        <br>
+                        Humidity: <span id = "humidity">53</span>
+                        <br>
+                        Sunrise: <span id = "sunriseout">53</span>
+                        <br>
+                        Sunset: <span id = "sunsetout">53</span>
+                        <br>
+                        Wind Speed: <span id="windspeed">50</span> mph
+                    </div>      
+                </div>          
+            </div>
+            <div class="card_index">
+                <h2>Current Forecast</h2>
+                <div id="forecast_card">
+                    <div><span id="todayforecast">100</span>&deg;F </div>
+                    <div>Monday: <span id="tommorowforecast">100</span>&deg;F </div>
+                    <div>Tuesday: <span id="day_after_tommorowforecast">100</span>&deg;F </div>
+                </div>
+            </div>
+        </div>
+        <div id="adContainer" class="ad-container"></div>
+    </main>
     </main>
     <footer id = "footer-section" class="footer-section" >
         <div class="footer-container">
