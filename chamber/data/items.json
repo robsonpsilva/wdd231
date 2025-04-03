@@ -10,6 +10,12 @@
       "address": "Rua Jardim Botânico, 1008, Jardim Botânico, Rio de Janeiro",
       "description": "The Rio de Janeiro Botanical Garden is one of the most beautiful and important parks in Brazil, located in the southern part of the city. Founded in 1808 by D. João VI, the space is home to a rich diversity of national and international flora, including rare and endangered species.",
       "image": "images/jardim-botanico.webp"
+    },
+    {
+      "name": "Pedra Bonita",
+      "address": "Parque Nacional da Tijuca, na Estrada das Canoas, em São Conrado, Rio de Janeiro",
+      "description": "Pedra Bonita is a famous tourist spot in Tijuca National Park, in Rio de Janeiro. Located at an altitude of about 693 meters, it offers an accessible trail and spectacular panoramic views of landmarks such as Morro Dois Irmãos, Pedra da Gávea and the city of Rio. It is also very popular with hang gliders and paragliders, due to its launch ramp. A perfect destination for adventure and nature lovers!",
+      "image": "images/pedra-bonita.webp"
     }
 ]
   
