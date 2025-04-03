@@ -76,6 +76,21 @@ transition: transform 0.3s;
   font-size: small;
 }
 
+@media (min-width: 320px) and (max-width: 640px) {
+  .cards {
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+      grid-template-columns: 1fr;
+  }
+}
+
 @media (min-width: 641px) and (max-width: 1024px) {
     .cards {
       grid-template-areas:
