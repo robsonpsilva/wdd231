@@ -183,6 +183,7 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--specialcolor);
+    padding: 10px;
 }
 .footer-heading{
     font-size: var(--large-font);
@@ -270,7 +271,7 @@ h1 {
     cursor: pointer;
   }
 
-  .section-text h2 {
+.section-text h2 {
     font-size: 2rem;
 }
 
