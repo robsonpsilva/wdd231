@@ -11,6 +11,7 @@
         padding: 10px; /* Espaçamento interno */
     }
     .comp_nav_a{
+        display: flex;
         width: 105px;
         
     }
@@ -18,5 +19,7 @@
         flex-direction: row;
         justify-content: space-around;
     }
-
+    #menu{
+        display: none;
+    }
 }

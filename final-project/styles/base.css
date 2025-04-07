@@ -155,3 +155,11 @@
 .social-icons a img {
     border-radius: 10px;
 }
+
+/* Formatting a hero image */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: url('sua-imagem.jpg') no-repeat center center/cover;
+}
