@@ -1,0 +1,39 @@
+[
+    {
+      "name": "Telegraph Rock",
+      "address": "Pedra Branca State Park, Barra de Guaratiba neighborhood, Rio de Janeiro",
+      "description": "It is a popular destination for hikers and tourists who want to take creative photos and enjoy the incredible views of the region. To get there, you need to take a trail that can vary between 3 and 4 km, depending on the starting point. Access can be via Caminho dos Pescadores or via the Point do Telégrafo restaurant.",
+      "image": "./images/pedra-do-telegrafo.webp"
+    },
+    {
+      "name": "Gavea Rock",
+      "address": "Tijuca Forest, Rio de Janeiro",
+      "description": "It is one of the largest seaside monoliths in the world, with an altitude of 842 meters. Access to the trail begins on Estrada Sorimã, between the neighborhoods of São Conrado and Barra da Tijuca. The trail is challenging and requires physical fitness, but offers spectacular views of the city and the coast.",
+      "image": "./images/pedra-da-gavea.webp"
+    },
+    {
+      "name": "Pedra Bonita",
+      "address": "Parque Nacional da Tijuca, na Estrada das Canoas, em São Conrado, Rio de Janeiro",
+      "description": "Pedra Bonita is a famous tourist spot in Tijuca National Park, in Rio de Janeiro. Located at an altitude of about 693 meters, it offers an accessible trail and spectacular panoramic views of landmarks such as Morro Dois Irmãos, Pedra da Gávea and the city of Rio.",
+      "image": "images/pedra-bonita.webp"
+    },
+    {
+      "name": "Copacabana Beach",
+      "address": "Atlântica avenue, Copacabana, Rio de Janeiro",
+      "description": "Copacabana Beach, located in Rio de Janeiro, is one of the most iconic beaches in the world. Stretching about 4 kilometers along the Atlantic Ocean, it is known for its vibrant atmosphere, soft golden sands, and the famous black-and-white wave-patterned promenade.",
+      "image": "images/praia-de-copacabana.webp"
+    },
+    {
+      "name": "Cristo Redentor",
+      "address": "Parque Nacional da Tijuca, no Alto da Boa Vista, Rio de Janeiro",
+      "description": "Christ the Redeemer is an iconic statue located atop Corcovado Mountain in Rio de Janeiro, Brazil. Standing at 38 meters tall, it is one of the New Seven Wonders of the World and a symbol of peace and Christianity. Offering breathtaking panoramic views of the city, the statue attracts millions of visitors every year. A true landmark of Brazil!",
+      "image": "images/cristo-redentor.webp"
+    },
+    {
+      "name": "Pão de açucar",
+      "address": "Urca neighborhood, in Rio de Janeiro, Brazil",
+      "description": "Sugarloaf Mountain is a stunning natural landmark in Rio de Janeiro, Brazil, famous for its unique granite peak rising 396 meters above the Guanabara Bay. Visitors can take a cable car ride to enjoy breathtaking panoramic views of the city, beaches, and surrounding mountains. It's a must-see attraction and a symbol of Rio's beauty!",
+      "image": "images/pao-de-acucar.webp"
+    }
+]
+  

@@ -1,5 +1,5 @@
 
-@media (min-width: 500px) {
+@media (min-width: 640px) and (max-width: 1024px)  {
     .comp_nav{
         display: flex;
         flex-direction: row;
@@ -22,4 +22,21 @@
     #menu{
         display: none;
     }
+    .cards {
+        grid-template-areas:
+          "card1 card2"
+          "card3 card4"
+          "card5 card6";
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
+
+@media (min-width: 1025px)  {
+  .cards {
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

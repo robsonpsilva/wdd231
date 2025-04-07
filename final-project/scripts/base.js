@@ -27,6 +27,52 @@ function tWayFinder(item){
 	})
 }
 
+fetch('./data/hiking-places.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    const cardsContainer = document.getElementById('cards-container');
+
+    // Create cards dynamically
+    let i = 1;
+    data.forEach(item => {
+      const card = document.createElement('article');
+      card.classList.add('card');
+      card.classList.add(`card${i}`);
+      i++;
+      card.innerHTML = `
+        <h2>${item.name}</h2>
+        <figure>
+          <img src="${item.image}" alt="${item.name}" loading="lazy" width = "300" height = "200">
+        </figure>
+        <address>${item.address}</address>
+        <br>
+        <p class = "justified">${item.description}</p>
+        <br>
+        <button>Learn More</button>
+      `;
+
+      cardsContainer.appendChild(card);
+    });
+  })
+  .catch(error => {
+    closeMessage('Error Loading Data.');
+  });
 
 
 
+function closeMessage(text) {
+    const overlay = document.getElementById('overlay');
+    const mensagemTexto = document.getElementById('mensage-text');
+    mensagemTexto.textContent = text;
+    overlay.style.display = 'flex'; // Exibe o overlay
+}
+
+function ope() {
+    const overlay = document.getElementById('overlay');
+    overlay.style.display = 'none'; // Esconde o overlay
+}
