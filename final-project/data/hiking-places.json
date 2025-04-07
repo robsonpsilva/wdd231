@@ -18,21 +18,21 @@
       "image": "images/pedra-bonita.webp"
     },
     {
-      "name": "Copacabana Beach",
-      "address": "Atlântica avenue, Copacabana, Rio de Janeiro",
-      "description": "Copacabana Beach, located in Rio de Janeiro, is one of the most iconic beaches in the world. Stretching about 4 kilometers along the Atlantic Ocean, it is known for its vibrant atmosphere, soft golden sands, and the famous black-and-white wave-patterned promenade.",
-      "image": "images/praia-de-copacabana.webp"
+      "name": "Gabriela Waterfall",
+      "address": "Sector A – Tijuca National Park, Rio de Janeiro"  ,
+      "description": "Gabriela Waterfall is a beautiful waterfall located in the Tijuca Forest. The trail to the waterfall is an enchanting journey, passing through dense vegetation and offering a refreshing bath upon arrival. This trail is considered easy to moderate, making it a great option for families with children. The path is well marked and maintained, ensuring a peaceful and safe walk. The trail to Gabriela Waterfall is a spectacle in itself, with several species of plants and animals native to the Atlantic Forest. The waterfall itself is a perfect place to relax and connect with nature.",
+      "image": "images/cachoeira-gabriela.webp"
     },
     {
-      "name": "Cristo Redentor",
-      "address": "Parque Nacional da Tijuca, no Alto da Boa Vista, Rio de Janeiro",
-      "description": "Christ the Redeemer is an iconic statue located atop Corcovado Mountain in Rio de Janeiro, Brazil. Standing at 38 meters tall, it is one of the New Seven Wonders of the World and a symbol of peace and Christianity. Offering breathtaking panoramic views of the city, the statue attracts millions of visitors every year. A true landmark of Brazil!",
-      "image": "images/cristo-redentor.webp"
+      "name": "Dois Irmãos Hill",
+      "address": "Vidigal, Rio de Janeiro",
+      "description": "The Morro Dois Irmãos Trail is one of the most iconic hikes in Rio de Janeiro. Located in Vidigal, the trail offers spectacular views of the city, including Christ the Redeemer, Leblon Beach, Pedra da Gávea, and São Conrado Beach. The trail starts in the Vidigal community and is approximately 1.6 km long. Depending on your fitness level, it can take up to 2 hours to complete the hike. Although it is considered a light to moderate trail, it is recommended to go with a guide as the signage is not very clear.",
+      "image": "./images/dois-irmaos.webp"
     },
     {
-      "name": "Pão de açucar",
+      "name": "Urca Trail",
       "address": "Urca neighborhood, in Rio de Janeiro, Brazil",
-      "description": "Sugarloaf Mountain is a stunning natural landmark in Rio de Janeiro, Brazil, famous for its unique granite peak rising 396 meters above the Guanabara Bay. Visitors can take a cable car ride to enjoy breathtaking panoramic views of the city, beaches, and surrounding mountains. It's a must-see attraction and a symbol of Rio's beauty!",
+      "description": "The Urca Trail is a hiking trail located in Rio de Janeiro. It begins at Pista Claudio Coutinho in Praça General Tiburcio and is a popular trail that offers stunning views of the city and Guanabara Bay. The trail is well marked and passes through a forest full of monkeys, providing a pleasant and safe experience for hikers of all ages.  The trail is short and well-traveled, with steps well-spaced into the hillside, making it accessible to most people.",
       "image": "images/pao-de-acucar.webp"
     }
 ]
