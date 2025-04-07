@@ -1,1 +1,70 @@
 teste 2
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --standard-blue: #003399;
+    --standard-yellow: #FFEE93;
+    --standard-green:#009B3A;
+    --standard-white:white;
+
+    --larger-font: 2rem;
+    --large-font: 1.75rem;
+    --medium-font: 1.5rem;
+    --small-font: 1.25rem;
+    --smaller-font: 1rem; 
+}
+
+.header-container{
+    display: flex;
+    align-items:end;
+    justify-content: space-between;
+    background-color: var(--standard-blue);
+    color: var(--standard-white);
+}
+
+.header-title-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.comp_nav {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #b62828;
+}
+
+
+.p1{
+    font-size: var(--larger-font);
+
+}
+
+.p2{
+    font-size: var(--large-font);
+
+}
+
+.p3{
+    font-size: var(--medium-font);
+
+}
+
+.p4{
+    font-size: var(--small-font);
+
+}
+
+.p5{
+    font-size: var(--smaller-font);
+
+}

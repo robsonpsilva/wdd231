@@ -1,0 +1,22 @@
+
+@media (min-width: 500px) {
+    .comp_nav{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        background-color: black;
+        border: 1px solid #ccc; /* Define a borda */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona a sombra */
+        padding: 10px; /* Espaçamento interno */
+    }
+    .comp_nav_a{
+        width: 105px;
+        
+    }
+    .footer-section{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
