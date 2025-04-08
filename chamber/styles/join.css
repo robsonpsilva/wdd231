@@ -1,18 +1,22 @@
 main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
 }
 form {
     width: 100%;
-    max-width: 350px;
+   /* max-width: 300px;*/
     
+}
+h1{
+    margin-left: 10px;
 }
 
 fieldset{
+    margin: 10px;
     border: 1px solid var(--specialcolor);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
 }
 legend{
@@ -25,7 +29,8 @@ input[type="email"],
 input[type="tel"],
 select,
 textarea {
-    width: calc(100% - 12px);
+    /*width: calc(100% - 12px);*/
+    width: 280px;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 3px;
@@ -59,7 +64,6 @@ label {
     margin-bottom: 5px;
     font-weight: bold;
 }
-
 
 .form-group {
     margin-bottom: 15px;
@@ -133,6 +137,7 @@ label {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
+    border: 10px solid blue;
 }
 
 .modal-content {
@@ -140,7 +145,7 @@ label {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 320px;
+    width: 280px;
     border-radius: 10px;
     position: relative;
 }
@@ -171,10 +176,18 @@ label {
 }
 
 @media (min-width: 768px) {
+    main{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
     form{
         max-width: 40%;
     }
     
+    #h1-membership{
+        margin-bottom: 20px;
+    }
     .membership-card {
         width: 320px;
     }

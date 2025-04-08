@@ -79,7 +79,7 @@ h1 {
 	flex-direction: column;
 	list-style: none;
 	color: #b62828;
-    font-size: var(--larger-font);
+    font-size: var(--medium-font);
 }
 
 .comp_nav_a{

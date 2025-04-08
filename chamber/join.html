@@ -67,8 +67,8 @@
                     <label for="organizationalTitle">
                         Organizational Title:
                         <input type="text" id="organizationalTitle" name="organizationalTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-zÀ-ú\s-]{7,}" tabindex="0">
-                        <small>Accepts letters, hyphens, and spaces only (minimum 7 characters).</small>
                     </label>
+                    <small>Accepts letters, hyphens, and spaces only (minimum 7 characters).</small>
                 </div>
         
                 <div class="form-group">
@@ -117,8 +117,8 @@
             </fieldset>
             
         </form> 
-        <div class="membership-cards-container">
-            <h1>Membership levels</h1>
+        <div >
+            <h1 id="h1-membership">Membership levels</h1>
             <div id="membership-level-cards" tabindex="0">
                 <div class="membership-card" onclick="openModal('npModal')">
                     <h2 tabindex="0">NP Membership</h2>
@@ -147,7 +147,7 @@
                     <li>Access to our network of members.</li>
                     <li>Listing in our non-profit directory.</li>
                     <li>Opportunity to participate in community events.</li>
-                    </ul>
+                </ul>
             </div>
         </div>
         <div id="bronzeModal" class="modal">
