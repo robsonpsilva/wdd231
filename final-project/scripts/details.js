@@ -18,7 +18,7 @@ async function loadData(place) {
       document.getElementById('duration').textContent = data.duration;
      document.getElementById('detail').textContent = data.detail;
     } catch (error) {
-      console.error("Error loading data:", error);
+      localStorage.setItem("Err", error);
     }
   }
   function  updateTrailDetails() {

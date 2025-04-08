@@ -60,7 +60,7 @@ fetch('./data/hiking-places.json')
     });
   })
   .catch(error => {
-    closeMessage('Error Loading Data.');
+    localStorage.setItem("Err", error);
   });
 
   function goToDetail(number) {
@@ -68,14 +68,3 @@ fetch('./data/hiking-places.json')
     window.location.href = `details.html?number=${encodeURIComponent(number)}`;
   }
 
-function closeMessage(text) {
-    const overlay = document.getElementById('overlay');
-    const mensagemTexto = document.getElementById('message-text');
-    mensagemTexto.textContent = text;
-    overlay.style.display = 'flex'; // Exibe o overlay
-}
-
-function open() {
-    const overlay = document.getElementById('overlay');
-    overlay.style.display = 'none'; // Esconde o overlay
-}
