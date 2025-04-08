@@ -11,8 +11,8 @@
     <link rel="icon" href="./images/favicon.ico">
 
     <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/large.css">
+    <link rel="stylesheet" href="./styles/details.css">
     
 
     <script src="./scripts/base.js" defer></script>
@@ -51,8 +51,8 @@
         <button id="menu" aria-label="Menu Button"></button>
     </header>
     <nav class="comp_nav">
-        <a href="./index.html" class="comp_nav_a active">Home</a>
-        <a href="./details.html" class="comp_nav_a">Details</a>
+        <a href="./index.html" class="comp_nav_a">Home</a>
+        <a href="./details.html" class="comp_nav_a active">Details</a>
         <a href="#" class="comp_nav_a" target="_self">Join</a>
         <a href="#" class="comp_nav_a" target="_self">Discover</a>
     </nav>
@@ -60,17 +60,34 @@
         <div class="hero">
             <button class="cta-button">Join Us</button>
         </div>
-        <section class="cards" id = "cards-container">
-      
-        </section>
-
-        <div id="overlay" class="overlay">
-            <div id="message-box" class="message-box">
-                <p id="message-text"></p>
-                <button onclick="fecharMensagem()">Fechar</button>
+        <h1>Details</h1>
+        <div class="image-container">
+            <img src="./pedra-do-telegrafo-detail.png" alt="Pedra do Telegrafo Details Image">
+        </div>
+        <div class="cards">
+            <div class="card action">
+                <h2>Service Options</h2>
+                <button class="service-button" onclick="schedule()">Schedule a trail</button>
+                <button class="service-button" onclick="requestPhotoVideoServices()">Photo and Video Services</button>
+                <button class="service-button" onclick="equipmentPurchaseRent()">Buy or Rent Safety Equipment</button>
+            </div>
+            <div class="card">
+                <h2>Suggestions on what to bring</h2>
+                <ul>
+                    <li>Backpack of sufficient size for your belongings</li>
+                    <li>2.5 liters of drinks – isotonic beverages, water, juice</li>
+                    <li>Footwear for hiking</li>
+                    <li>Cereal bars, cookies, sandwiches</li>
+                    <li>Sunglasses, hat, or cap</li>
+                    <li>Insect repellent and sunscreen</li>
+                    <li>First Aid Kit</li>
+                    <li>Camera</li>
+                    <li>Swimwear</li>
+                    <li>Spare clothes</li>
+                    <li>Garbage bag</li>
+                  </ul> 
             </div>
         </div>
-
     </main>
     <footer id = "footer-section" class="footer-section" >
         <div class="footer-container">

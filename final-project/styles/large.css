@@ -1,5 +1,5 @@
 
-@media (min-width: 640px) and (max-width: 1024px)  {
+@media (min-width: 640px)  {
     .comp_nav{
         display: flex;
         flex-direction: row;

@@ -53,7 +53,7 @@ fetch('./data/hiking-places.json')
         <br>
         <p class = "justified">${item.description}</p>
         <br>
-        <button>Learn More</button>
+        <button class = "learnmorebtn">Learn More</button>
       `;
 
       cardsContainer.appendChild(card);
@@ -67,12 +67,12 @@ fetch('./data/hiking-places.json')
 
 function closeMessage(text) {
     const overlay = document.getElementById('overlay');
-    const mensagemTexto = document.getElementById('mensage-text');
+    const mensagemTexto = document.getElementById('message-text');
     mensagemTexto.textContent = text;
     overlay.style.display = 'flex'; // Exibe o overlay
 }
 
-function ope() {
+function open() {
     const overlay = document.getElementById('overlay');
     overlay.style.display = 'none'; // Esconde o overlay
 }
