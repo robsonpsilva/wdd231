@@ -63,7 +63,10 @@ fetch('./data/hiking-places.json')
     closeMessage('Error Loading Data.');
   });
 
-
+  function goToDetail(number) {
+    // Redireciona para a página detail com o parâmetro na URL
+    window.location.href = `detail.html?name=${encodeURIComponent(number)}`;
+  }
 
 function closeMessage(text) {
     const overlay = document.getElementById('overlay');

@@ -17,6 +17,7 @@
 
     <script src="./scripts/base.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
+    <script src="./scripts/detail.js"></script>
 
     <meta property="og:title" content="Rio de Janeiro Hiking">
     <meta property="og:url" content="https://robsonpsilva.github.io/wdd231/final-project/index.html">
@@ -62,10 +63,26 @@
         </div>
         <h1>Details</h1>
         <div class="image-container">
-            <img src="./pedra-do-telegrafo-detail.png" alt="Pedra do Telegrafo Details Image">
+            <img src="./images/pedra-do-telegrafo-detail.png" alt="Pedra do Telegrafo Details Image" id="imageofplace">
+            <p id="detail"></p>
         </div>
         <div class="cards">
             <div class="card action">
+                <div class="summarycard">
+                    <h2>Trail Information</h2>
+                    <div class="info">
+                      <label>Type:</label>
+                      <span id="type"></span>
+                    </div>
+                    <div class="info">
+                      <label>Region:</label>
+                      <span id="region"></span>
+                    </div>
+                    <div class="info">
+                      <label>Duration:</label>
+                      <span id="duration"></span>
+                    </div>
+                </div>
                 <h2>Service Options</h2>
                 <button class="service-button" onclick="schedule()">Schedule a trail</button>
                 <button class="service-button" onclick="requestPhotoVideoServices()">Photo and Video Services</button>

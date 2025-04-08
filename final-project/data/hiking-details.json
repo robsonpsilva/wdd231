@@ -4,9 +4,19 @@
       "image": "./images/pedra-do-telegrafo.webp",
       "type": "Light trail",
       "Region": "Rio de Janeiro",
-      "duration": "one morning",
+      "duration": "One morning",
       "detail": "The highest point of Barra de Guaratiba, at 355 meters, provides a wide view of Restinga da Marambaia, Ilha Grande, Ilha da Marambaia and Itacuruçá. During World War II, the hill housed a military detachment, as there was concern that German submarines were circulating in those waters. The information was transmitted via radio through a generator, which led the population to give the name by which the hill is known to this day. Telégrafo Hill actually has four viewpoints, each offering “amazing” views."
 
+    },
+
+    {
+        "name": "Dois Irmãos Hill",
+        "image": "./images/dois-irmaos.webp",
+        "type": "Light trail",
+        "Region": "Rio de Janeiro",
+        "duration": "One morning",
+        "detail": "TThe Morro Dois Irmãos trail, located in Rio de Janeiro, is one of the most iconic in the city. It starts in the community of Vidigal, behind the Vila Olímpica soccer field, and offers spectacular views along the way. At about 1.5 km long, the trail is considered easy to moderate, depending on the visitor's physical condition. Along the way, there are viewpoints that provide incredible views of the city, including beaches such as Leblon and Ipanema, Lagoa Rodrigo de Freitas, Christ the Redeemer and even Pedra da Gávea. The highest point of Morro Dois Irmãos, at 539 meters above sea level, offers a breathtaking panoramic view. If you are planning to explore this trail, prepare yourself for an unforgettable experience, combining nature and urban views!"
+  
     }
 ]
   
