@@ -43,7 +43,7 @@ fetch('./data/hiking-places.json')
       const card = document.createElement('article');
       card.classList.add('card');
       card.classList.add(`card${i}`);
-      i++;
+
       card.innerHTML = `
         <h2>${item.name}</h2>
         <figure>
@@ -53,9 +53,9 @@ fetch('./data/hiking-places.json')
         <br>
         <p class = "justified">${item.description}</p>
         <br>
-        <button class = "learnmorebtn">Learn More</button>
+        <button class = "learnmorebtn"  onclick="goToDetail(${i})">Learn More</button>
       `;
-
+      i++;
       cardsContainer.appendChild(card);
     });
   })
@@ -65,7 +65,7 @@ fetch('./data/hiking-places.json')
 
   function goToDetail(number) {
     // Redireciona para a página detail com o parâmetro na URL
-    window.location.href = `detail.html?name=${encodeURIComponent(number)}`;
+    window.location.href = `details.html?number=${encodeURIComponent(number)}`;
   }
 
 function closeMessage(text) {

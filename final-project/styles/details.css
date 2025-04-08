@@ -26,9 +26,24 @@ body {
     width: 100%; /* Ocupa toda a largura */
     padding-top: 10px;
     padding-left: 10px; /* Alinhamento à esquerda */
+    padding-bottom: 10px;
     box-sizing: border-box; /* Inclui padding no cálculo */
     font-size: var(--large-font); /* Ajusta o tamanho da fonte */
     color: var(--standard-blue);
+  }
+  #select-option{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid var(--standard-blue);
+  }
+  #select-option select{
+    font-size: var(--small-font);
+    margin-left: 10px;
+    width: 220px;
+    height: 50px;
   }
   .image-container {
     flex: 2 1 66.66%; /* 2/3 da largura */
@@ -108,6 +123,20 @@ body {
     text-align: justify; 
     font-size: var(--small-font);
   }
+
+  .cta-button {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color:var(--standard-blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--small-font);
+}
 
   @media (max-width: 640px) {
     main {

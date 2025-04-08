@@ -17,7 +17,7 @@
 
     <script src="./scripts/base.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
-    <script src="./scripts/detail.js"></script>
+    <script src="./scripts/details.js" defer></script>
 
     <meta property="og:title" content="Rio de Janeiro Hiking">
     <meta property="og:url" content="https://robsonpsilva.github.io/wdd231/final-project/index.html">
@@ -53,7 +53,7 @@
     </header>
     <nav class="comp_nav">
         <a href="./index.html" class="comp_nav_a">Home</a>
-        <a href="./details.html" class="comp_nav_a active">Details</a>
+        <a href="./details.html?number=1" class="comp_nav_a active">Details</a>
         <a href="#" class="comp_nav_a" target="_self">Join</a>
         <a href="#" class="comp_nav_a" target="_self">Discover</a>
     </nav>
@@ -62,6 +62,18 @@
             <button class="cta-button">Join Us</button>
         </div>
         <h1>Details</h1>
+        <div id="select-option">
+            <h2>Select your trail:</h2>  
+            <select id="trailSelect" onchange="updateTrailDetails()">
+                <option value="1">Telegraph Rock</option>
+                <option value="2">Dois Irmãos Hill</option>
+                <option value="3">Gavea Rock</option>
+                <option value="4">Pedra Bonita</option>
+                <option value="5">Gabriela Waterfall</option>
+                <option value="6">Urca Trail</option>
+            </select>
+        </div>
+        
         <div class="image-container">
             <img src="./images/pedra-do-telegrafo-detail.png" alt="Pedra do Telegrafo Details Image" id="imageofplace">
             <p id="detail"></p>

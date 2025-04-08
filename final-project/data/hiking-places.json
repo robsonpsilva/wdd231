@@ -6,6 +6,12 @@
       "image": "./images/pedra-do-telegrafo.webp"
     },
     {
+      "name": "Dois Irmãos Hill",
+      "address": "Vidigal, Rio de Janeiro",
+      "description": "The Morro Dois Irmãos Trail is one of the most iconic hikes in Rio de Janeiro. Located in Vidigal, the trail offers spectacular views of the city, including Christ the Redeemer, Leblon Beach, Pedra da Gávea, and São Conrado Beach. The trail starts in the Vidigal community and is approximately 1.6 km long. Depending on your fitness level, it can take up to 2 hours to complete the hike. Although it is considered a light to moderate trail, it is recommended to go with a guide as the signage is not very clear.",
+      "image": "./images/dois-irmaos.webp"
+    },
+    {
       "name": "Gavea Rock",
       "address": "Tijuca Forest, Rio de Janeiro",
       "description": "It is one of the largest seaside monoliths in the world, with an altitude of 842 meters. Access to the trail begins on Estrada Sorimã, between the neighborhoods of São Conrado and Barra da Tijuca. The trail is challenging and requires physical fitness, but offers spectacular views of the city and the coast.",
@@ -23,12 +29,7 @@
       "description": "Gabriela Waterfall is a beautiful waterfall located in the Tijuca Forest. The trail to the waterfall is an enchanting journey, passing through dense vegetation and offering a refreshing bath upon arrival. This trail is considered easy to moderate, making it a great option for families with children. The path is well marked and maintained, ensuring a peaceful and safe walk. The trail to Gabriela Waterfall is a spectacle in itself, with several species of plants and animals native to the Atlantic Forest. The waterfall itself is a perfect place to relax and connect with nature.",
       "image": "./images/cachoeira-gabriela.webp"
     },
-    {
-      "name": "Dois Irmãos Hill",
-      "address": "Vidigal, Rio de Janeiro",
-      "description": "The Morro Dois Irmãos Trail is one of the most iconic hikes in Rio de Janeiro. Located in Vidigal, the trail offers spectacular views of the city, including Christ the Redeemer, Leblon Beach, Pedra da Gávea, and São Conrado Beach. The trail starts in the Vidigal community and is approximately 1.6 km long. Depending on your fitness level, it can take up to 2 hours to complete the hike. Although it is considered a light to moderate trail, it is recommended to go with a guide as the signage is not very clear.",
-      "image": "./images/dois-irmaos.webp"
-    },
+
     {
       "name": "Urca Trail",
       "address": "Urca neighborhood, in Rio de Janeiro, Brazil",
