@@ -91,7 +91,7 @@ transition: transform 0.3s;
     font-size: var(--mediu-font);
 }
 
-@media (min-width: 320px) and (max-width: 640px) {
+@media (min-width: 300px) and (max-width: 640px) {
     .cards {
       grid-template-areas:
           "card1"
