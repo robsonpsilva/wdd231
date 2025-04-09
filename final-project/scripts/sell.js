@@ -17,10 +17,12 @@ let products = [];
             const card = document.createElement('div');
             card.className = 'card';
             card.innerHTML = `
-                <img src="${product.image}" alt="${product.name}">
-                <h3>${product.name}</h3>
+                <img src="${product.image}" alt="${product.name}" width="300">
+                <h2>${product.name}</h2>
                 <p>Price: $${product.price.toFixed(2)}</p>
+                <label for="quantity-${product.id}">Quantity:</label>
                 <input type="number" id="quantity-${product.id}" min="1" value="1">
+                <br><br>
                 <button onclick="addToCart(${product.id})">Add to Cart</button>
             `;
             productList.appendChild(card);

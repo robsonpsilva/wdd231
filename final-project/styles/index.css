@@ -13,6 +13,12 @@
     font-size: var(--small-font);
 }
 
+.responsive-image {
+    width: 100%; /* Faz a imagem ocupar toda a largura do container */
+    height: auto; /* Ajusta a altura proporcionalmente à largura */
+    object-fit: contain; /* Garante que a imagem se encaixe no container, mantendo o aspect ratio */
+  }
+
 .cards {
     display: grid;
     gap: 1rem;

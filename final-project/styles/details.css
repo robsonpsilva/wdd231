@@ -151,4 +151,9 @@ body {
       flex: none;
       width: 320px;
     }
+    .comp_nav_a{
+      display: flex;
+      width: 130px;
+      
+  }
   }

@@ -11,10 +11,10 @@
         padding: 10px; /* Espaçamento interno */
     }
     .comp_nav_a{
-        display: flex;
-        width: 105px;
-        
-    }
+      display: flex;
+      width: 130px;
+      
+  }
     .footer-section{
         flex-direction: row;
         justify-content: space-around;
@@ -29,6 +29,12 @@
           "card5 card6";
         grid-template-columns: 1fr 1fr;
       }
+    #large_text{
+        font-size: var(--large-font);   
+    }
+    #small_text{
+        font-size: var(--small-font);
+    }
 }
 
 

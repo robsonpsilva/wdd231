@@ -1,3 +1,20 @@
+h1{
+    margin-left: 15px;
+    color: var(--standard-blue);
+}
+.cta-button {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color:var(--standard-blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--small-font);
+}
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -71,5 +88,10 @@
     .card {
         flex: 1 1 calc(25% - 32px);
         margin: 16px;
+    }
+    .comp_nav_a{
+        display: flex;
+        width: 130px;
+        
     }
 }
