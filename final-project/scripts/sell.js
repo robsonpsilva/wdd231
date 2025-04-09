@@ -7,7 +7,7 @@ let products = [];
             products = await response.json();
             displayProducts();
         } catch (error) {
-            console.error('Error fetching products:', error);
+            localStorage.setItem("Err", error);
         }
     }
 
@@ -69,7 +69,6 @@ let products = [];
 
     function finalizePurchase() {
         const cartJson = JSON.stringify(cart);
-        console.log('Cart JSON:', cartJson);
 
         const cartSummary = document.getElementById('cart-summary');
         cartSummary.innerHTML = `

@@ -43,6 +43,7 @@ fetch('./data/hiking-places.json')
       const card = document.createElement('article');
       card.classList.add('card');
       card.classList.add(`card${i}`);
+      card.classList.add('image-container');
 
       card.innerHTML = `
         <h2>${item.name}</h2>

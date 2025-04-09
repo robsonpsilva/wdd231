@@ -167,3 +167,15 @@ main{
     height: 50vh;
     background: url('../images/rio-hero.webp') no-repeat center center/cover;
 }
+
+.image-container {
+    width: 100%;
+    max-width: 405px;
+    height: auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
