@@ -1,4 +1,12 @@
-
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+h1{
+    margin-top: 10px;
+    margin-left: 15px;
+    color: var(--standard-blue);
+}
 .cta-button {
     position: absolute;
     top: 10%;
@@ -13,11 +21,6 @@
     font-size: var(--small-font);
 }
 
-.responsive-image {
-    width: 100%; /* Faz a imagem ocupar toda a largura do container */
-    height: auto; /* Ajusta a altura proporcionalmente à largura */
-    object-fit: contain; /* Garante que a imagem se encaixe no container, mantendo o aspect ratio */
-  }
 
 .cards {
     display: grid;

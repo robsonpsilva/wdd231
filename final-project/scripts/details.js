@@ -26,6 +26,15 @@ async function loadData(place) {
     const place = select.value;
     loadData(place);
   }
+
+  function equipmentPurchaseRent() {
+    // URL da página de interesse
+    var url = "./sell.html";
+    
+    // Abre a URL no navegador
+    window.open(url, '_blank');
+}
+
   // Executa a função ao carregar a página
   const params = new URLSearchParams(window.location.search);
   const place = params.get("number")

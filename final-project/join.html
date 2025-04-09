@@ -10,14 +10,15 @@
 
     <link rel="icon" href="./images/favicon.ico">
 
+    <link rel="stylesheet" href="./styles/join.css">
     <link rel="stylesheet" href="./styles/base.css">
+    
     <link rel="stylesheet" href="./styles/large.css">
-    <link rel="stylesheet" href="./styles/sell.css">
     
 
     <script src="./scripts/base.js" defer></script>
+    <script src="./scripts/join.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
-    <script src="./scripts/sell.js" defer></script>
 
     <meta property="og:title" content="Rio de Janeiro Hiking">
     <meta property="og:url" content="https://robsonpsilva.github.io/wdd231/final-project/index.html">
@@ -33,40 +34,70 @@
     <header id = "header-container" class = "header-container">
         <div id = "header-title-image" class="header-title-image">
             <img
-            srcset="
-            ./images/rio_75x75.webp 75w,
-            ./images/rio_100x100.webp 100w,
-            ./images/rio_120x120.webp 120w
-        "
-        sizes="(max-width: 480px) 75px,
-                    (max-width: 800px) 100px,
-                    120px"
-        src="./images/rio_75x75.webp"
-        alt="Rio de Janeiro Hiking Logo" />
+                srcset="
+                    ./images/rio_75x75.webp 75w,
+                    ./images/rio_100x100.webp 100w,
+                    ./images/rio_120x120.webp 120w
+                "
+                sizes="(max-width: 480px) 75px,
+                            (max-width: 800px) 100px,
+                            120px"
+                src="./images/rio_75x75.webp"
+                alt="Rio de Janeiro Hiking Logo" />
 
-    <div id="business_name" class="business_name">
-        <span id="large_text">Rio de Janeiro</span>
-        <span id="small_text">Hiking Company</span>
-    </div>
+            <div id="business_name" class="business_name">
+                <span id="large_text">Rio de Janeiro</span>
+                <span id="small_text">Hiking Company</span>
+            </div>
         </div>
         <button id="menu" aria-label="Menu Button"></button>
     </header>
     <nav class="comp_nav">
         <a href="./index.html" class="comp_nav_a">Home</a>
         <a href="./details.html?number=1" class="comp_nav_a">Details</a>
-        <a href="./sell.html" class="comp_nav_a  active" target="_self">Buy</a>
-        <a href="./join.html" class="comp_nav_a" target="_self">Join Us</a>
+        <a href="./sell.html" class="comp_nav_a" target="_self">Buy</a>
+        <a href="./join.html" class="comp_nav_a  active" target="_self">Join Us</a>
     </nav>
     <main>
         <div class="hero">
-            <button class="cta-button">Join Us</button>
         </div>
-        <h1>Buy</h1>
-        <div class="container" id="product-list"></div>
-
-        <div class="cart" id="cart-summary"></div>
-        <div class="finalize-button">
-            <button onclick="finalizePurchase()">Finalize Purchase</button>
+        <h1>Join</h1>
+        <div class="container">
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience Level:</label>
+                    <select id="experience" name="experience" required>
+                        <option value="" disabled selected>Select your level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                <button id = "btnsubmit" type="submit">Confirm Registration</button>
+            </form>
+        </div>
+    
+        <div id="successOverlay" class="overlay">
+            <div class="overlay-content">
+                <h2>Success!</h2>
+                <p>Your registration was completed successfully.</p>
+            </div>
         </div>
     </main>
     <footer id = "footer-section" class="footer-section" >
@@ -94,4 +125,3 @@
     </footer>
 </body>
 </html>
-

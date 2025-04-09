@@ -1,4 +1,9 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
 h1{
+    margin-top: 10px;
     margin-left: 15px;
     color: var(--standard-blue);
 }
