@@ -52,7 +52,13 @@ input[type="text"]:invalid:required,
 input[type="email"]:invalid:required,
 input[type="tel"]:invalid:required,
 select:invalid:required {
-    border-color: red;
+    border-left-color: red;
+    border-width: 5px;
+}
+
+select:valid:required {
+    border-left-color: green;
+    border-width: 5px;
 }
 
 input[type="text"]:invalid:required + label::after,
@@ -62,6 +68,9 @@ select:invalid:required + label::after {
     content: " *";
     color: red;
 }
+input:required {border-width: 5px; border-left-color: #d70000;}
+input:focus {border-width: 5px; border-left-color: black; outline:none;}
+input:required:valid{border-left-color: green;}
 
 #btnsubmit {
     background-color: var(--standard-blue);
