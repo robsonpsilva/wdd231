@@ -131,9 +131,10 @@ font-size: var(--medium-font);
 
 @media (max-width: 640px) {
   main {
+    margin: 0;
     flex-direction: column;
     align-items: center;
-    padding: 5px;
+    
   }
   .image-container, .cards {
     flex: none;
