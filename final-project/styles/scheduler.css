@@ -4,6 +4,9 @@ h1{
     margin-left: 15px;
     color: var(--standard-blue);
 }
+h2{
+    margin: 10px;
+}
 
 input[type="date"]:invalid:required,
 input[type="time"]:invalid:required,
@@ -20,19 +23,16 @@ select:invalid:required {
 }
 
 
-
-
-
 #hiking-scheduler {
     margin-top: 10px; 
     margin-left: 15px;
     margin-bottom: 10px;
     max-width: 600px;
-    padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
 }
 #schedule-form {
+    padding: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -57,8 +57,7 @@ select:invalid:required {
 @media (max-width: 600px) {
     #hiking-scheduler {
         margin: 0 auto;
-        width: 90%;
-        padding: 10px;
+        width: 94%;
         margin-top: 10px;
         margin-bottom: 10px;
     }

@@ -8,8 +8,12 @@ h1{
     color: var(--standard-blue);
 }
 
-
-
+#external-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 .cards {
     display: grid;
     gap: 1rem;

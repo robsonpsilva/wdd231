@@ -1,5 +1,5 @@
 
-@media (min-width: 640px)  {
+@media (min-width: 540px)  {
     .comp_nav{
         display: flex;
         flex-direction: row;
@@ -38,7 +38,7 @@
 }
 
 
-@media (min-width: 1025px)  {
+@media (min-width: 912px)  {
   .cards {
     grid-template-areas:
       "card1 card2 card3"
