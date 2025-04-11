@@ -56,10 +56,11 @@
         <a href="./details.html?number=1" class="comp_nav_a active">Details</a>
         <a href="./sell.html" class="comp_nav_a" target="_self">Buy</a>
         <a href="./join.html" class="comp_nav_a" target="_self">Join Us</a>
+        <a href="./schedule.html?number=0" class="comp_nav_a" target="_self">Schedule</a>
     </nav>
     <main>
         <div class="hero">
-            <button class="cta-button">Join Us</button>
+            <button class="cta-button" onclick="goToJoin()">Join Us</button>
         </div>
         <h1>Details</h1>
         <div id="select-option">
@@ -74,7 +75,7 @@
             </select>
         </div>
         
-        <div class="image-container">
+        <div id="detail-image-container">
             <img src="./images/pedra-do-telegrafo.webp" alt="Pedra do Telegrafo Details Image" id="imageofplace">
             <p id="detail"></p>
         </div>
@@ -96,8 +97,8 @@
                     </div>
                 </div>
                 <h2>Service Options</h2>
+                
                 <button class="service-button" onclick="schedule()">Schedule a trail</button>
-                <button class="service-button" onclick="requestPhotoVideoServices()">Photo and Video Services</button>
                 <button class="service-button" onclick="equipmentPurchaseRent()">Buy or Rent Safety Equipment</button>
             </div>
             <div class="card">

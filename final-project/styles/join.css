@@ -68,8 +68,8 @@ select:invalid:required + label::after {
     content: " *";
     color: red;
 }
-input:required {border-width: 5px; border-left-color: #d70000;}
-input:focus {border-width: 5px; border-left-color: black; outline:none;}
+input:required {border-left-width: 5px; border-left-color: #d70000;}
+input:focus {border-left-width: 5px; border-left-color: black; outline:none;}
 input:required:valid{border-left-color: green;}
 
 #btnsubmit {

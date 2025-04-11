@@ -35,6 +35,12 @@ async function loadData(place) {
     window.open(url, '_blank');
 }
 
+function schedule(){
+  const select = document.getElementById('trailSelect');
+  const place = select.value;
+  window.location.href = `schedule.html?number=${place}`;
+}
+
   // Executa a função ao carregar a página
   const params = new URLSearchParams(window.location.search);
   const place = params.get("number")

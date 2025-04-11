@@ -21,6 +21,19 @@ main{
     --smaller-font: 1rem; 
     --tiny-smaller-font: 0.75rem;
 }
+.cta-button {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color:var(--standard-blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--small-font);
+}
 
 /* Formating Header and menu starting */
 .header-container{

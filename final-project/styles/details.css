@@ -45,14 +45,14 @@ body {
     width: 220px;
     height: 50px;
   }
-  .image-container {
+  #detail-image-container {
     flex: 2 1 66.66%; /* 2/3 da largura */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items:center;
   }
-  .image-container img {
+  #detail-image-container img {
     width: 100%;
     height: auto;
     padding: 10px;
@@ -124,19 +124,6 @@ body {
     font-size: var(--small-font);
   }
 
-  .cta-button {
-    position: absolute;
-    top: 10%;
-    right: 5%;
-    transform: translateY(-50%);
-    padding: 10px 20px;
-    background-color:var(--standard-blue);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: var(--small-font);
-}
 #lbtrailSelect{
   font-weight: bolder;
   font-size: var(--medium-font);

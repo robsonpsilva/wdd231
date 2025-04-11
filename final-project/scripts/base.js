@@ -69,3 +69,8 @@ fetch('./data/hiking-places.json')
     window.location.href = `details.html?number=${encodeURIComponent(number)}`;
   }
 
+  function goToJoin() {
+    // Redireciona para a página detail com o parâmetro na URL
+    window.location.href = `join.html`;
+  }
+
