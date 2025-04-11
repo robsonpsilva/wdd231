@@ -4,6 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
 	const params = new URLSearchParams(window.location.search);
   	const place = params.get("number");
 
+	const optionElement = document.createElement('option');
+	optionElement.value = ""; // Define o valor vazio
+	optionElement.disabled = true; // Torna o option desabilitado
+	optionElement.selected = true; // Define como selecionado inicialmente
+	optionElement.textContent = "Select your trail"; // Texto do option
+	  
+	  // Adiciona o <option> ao <select>
+	 locationSelect.appendChild(optionElement);
 	let i = 1;
 	// Load locations from JSON file
 	fetch('./data/hiking-places.json')
@@ -17,7 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			locationSelect.appendChild(option);
 		}
 		);
-		locationSelect.value = place;
+		if (place !=0){
+			locationSelect.value = place;
+		}
+		
 	})
 	.catch(error => console.error('Error loading locations:', error));
 
