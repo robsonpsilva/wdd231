@@ -7,6 +7,10 @@
 main{
     border: 3px solid var(--standard-green);
 }
+img {
+    width: 100%;
+    height: auto; /* Mantém a proporção */
+}
 
 :root{
     --standard-blue: #003399;
