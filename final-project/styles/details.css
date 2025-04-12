@@ -140,7 +140,7 @@ body {
       width: 310px;
     }
     .comp_nav_a{
-      display: flex;
+      display: none;
       width: 130px;
       
   }
