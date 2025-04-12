@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const params = new URLSearchParams(window.location.search);
   	const place = params.get("number");
 
-	const optionElement = document.createElement('option');
+	const optionElement = document.getElementById('dummy');
 	optionElement.value = ""; // Define o valor vazio
 	optionElement.disabled = true; // Torna o option desabilitado
 	optionElement.selected = true; // Define como selecionado inicialmente
