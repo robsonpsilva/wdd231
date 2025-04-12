@@ -30,7 +30,7 @@ input[type="tel"],
 select,
 textarea {
     /*width: calc(100% - 12px);*/
-    width: 280px;
+    width: 95%;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 3px;
@@ -63,6 +63,10 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+}
+.lbitem{
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group {
@@ -202,5 +206,15 @@ label {
     #membership-level-cards{
         margin-top: 11px;
     }
+}
+@media (max-width: 350px) {
+    #membership-level-cards{
+        width: 300px;
+
+    }
+    h3{
+        font-size: var(--small-tiny-font);
+    }
+    
 }
 

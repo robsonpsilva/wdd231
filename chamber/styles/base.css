@@ -17,6 +17,7 @@ input:-webkit-autofill{
     --large-font: 2rem;
     --medium-font: 1.2rem;
     --small-medium-font: 1.1rem;
+    --small-tiny-font: 0.95rem;
     --small-font: 0.8rem;
     --smaller-font: 0.5rem; 
 }
