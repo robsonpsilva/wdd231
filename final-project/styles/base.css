@@ -196,3 +196,14 @@ img {
     height: auto;
     object-fit: contain;
 }
+
+#thanksmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: var(--medium-font);
+}
+
+    

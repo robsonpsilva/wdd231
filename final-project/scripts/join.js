@@ -23,5 +23,6 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     setTimeout(function() {
         document.getElementById('successOverlay').style.display = 'none';
         document.getElementById('registrationForm').reset(); // Clear the form
-    }, 3000);
+        window.location.href = "./thanks.html";
+    }, 2500);
 });
