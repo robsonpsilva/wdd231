@@ -1,5 +1,8 @@
 
 @media (min-width: 540px)  {
+    #thanksdata{
+      width: 450px;
+    }
     .comp_nav{
         display: flex;
         flex-direction: row;
